@@ -1,0 +1,28 @@
+﻿CREATE TABLE [dbo].[Orders] (
+    [OrderID]           UNIQUEIDENTIFIER NOT NULL,
+    [OrderNumber]       NVARCHAR (50)    NULL,
+    [UserName]          NVARCHAR (50)    NOT NULL,
+    [UserLanguageCode]  CHAR (2)         CONSTRAINT [DF_Orders_UserLanguageCode] DEFAULT ('en') NOT NULL,
+    [TaxAmount]         MONEY            CONSTRAINT [DF_Orders_TaxAmount] DEFAULT ((0)) NOT NULL,
+    [ShippingService]   NVARCHAR (50)    NULL,
+    [ShippingAmount]    MONEY            CONSTRAINT [DF_Orders_ShippingAmount] DEFAULT ((0)) NOT NULL,
+    [DiscountAmount]    MONEY            CONSTRAINT [DF_Orders_DiscountAmount] DEFAULT ((0)) NOT NULL,
+    [DiscountReason]    NVARCHAR (50)    NULL,
+    [ShippingAddressID] INT              NULL,
+    [BillingAddressID]  INT              NULL,
+    [DateShipped]       DATETIME         NULL,
+    [TrackingNumber]    NVARCHAR (50)    NULL,
+    [EstimatedDelivery] DATETIME         NULL,
+    [SubTotal]          MONEY            CONSTRAINT [DF_Orders_SubTotal] DEFAULT ((0)) NOT NULL,
+    [OrderStatusID]     INT              NOT NULL,
+    [CreatedOn]         DATETIME         CONSTRAINT [DF_Orders_CreatedOn] DEFAULT (getdate()) NOT NULL,
+    [ExecutedOn]        DATETIME         NULL,
+    [ModifiedOn]        DATETIME         CONSTRAINT [DF_Orders_ModifiedOn] DEFAULT (getdate()) NOT NULL,
+    [Version]           ROWVERSION       NOT NULL,
+    CONSTRAINT [PK_Orders] PRIMARY KEY CLUSTERED ([OrderID] ASC),
+    CONSTRAINT [FK_Orders_Addresses] FOREIGN KEY ([ShippingAddressID]) REFERENCES [dbo].[Addresses] ([AddressID]),
+    CONSTRAINT [FK_Orders_Addresses1] FOREIGN KEY ([BillingAddressID]) REFERENCES [dbo].[Addresses] ([AddressID]),
+    CONSTRAINT [FK_Orders_Customers] FOREIGN KEY ([UserName]) REFERENCES [dbo].[Customers] ([UserName]),
+    CONSTRAINT [FK_Orders_OrderStatus] FOREIGN KEY ([OrderStatusID]) REFERENCES [dbo].[OrderStatus] ([OrderStatusID])
+);
+

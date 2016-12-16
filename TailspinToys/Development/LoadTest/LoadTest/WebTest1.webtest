@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebTest Name="WebTest1" Id="12a452c7-e75e-48d6-a6ab-4053e358c315" Owner="" Priority="2147483647" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="" CredentialPassword="" PreAuthenticate="True" Proxy="default" StopOnError="False" RecordedResultFile="WebTest1.6162dd5d-39e5-431b-b5d7-62ba3895aaf1.rec.webtestresult" ResultsLocale="">
+  <Items>
+    <Request Method="GET" Guid="3c713d07-cc8c-4307-be85-5060d1a19b80" Version="1.1" Url="http://api.bing.com/qsml.aspx" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="query" Value="http" RecordedValue="http" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="maxwidth" Value="32765" RecordedValue="32765" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rowheight" Value="27" RecordedValue="27" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sectionHeight" Value="216" RecordedValue="216" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="FORM" Value="IESS02" RecordedValue="IESS02" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="market" Value="en-IN" RecordedValue="en-IN" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="e12616d4-0528-4543-8ea3-ec91eb569dbb" Version="1.1" Url="http://api.bing.com/qsml.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="query" Value="http%3A" RecordedValue="http%3A" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="maxwidth" Value="32765" RecordedValue="32765" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rowheight" Value="27" RecordedValue="27" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sectionHeight" Value="216" RecordedValue="216" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="FORM" Value="IESS02" RecordedValue="IESS02" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="market" Value="en-IN" RecordedValue="en-IN" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="4faec844-6727-4c9a-ad60-b8b42537f0d7" Version="1.1" Url="http://api.bing.com/qsml.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="query" Value="http%3A%2F%2Ft" RecordedValue="http%3A%2F%2Ft" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="maxwidth" Value="32765" RecordedValue="32765" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rowheight" Value="27" RecordedValue="27" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sectionHeight" Value="216" RecordedValue="216" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="FORM" Value="IESS02" RecordedValue="IESS02" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="market" Value="en-IN" RecordedValue="en-IN" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="0ecf4dca-7724-4f1b-be42-58b49117f558" Version="1.1" Url="http://api.bing.com/qsml.aspx" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="query" Value="http%3A%2F%2Ftia" RecordedValue="http%3A%2F%2Ftia" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="maxwidth" Value="32765" RecordedValue="32765" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rowheight" Value="27" RecordedValue="27" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sectionHeight" Value="216" RecordedValue="216" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="FORM" Value="IESS02" RecordedValue="IESS02" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="market" Value="en-IN" RecordedValue="en-IN" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="8fac493b-ac12-44af-ab8c-cf52167207b1" Version="1.1" Url="http://api.bing.com/qsml.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="query" Value="http%3A%2F%2Ftail" RecordedValue="http%3A%2F%2Ftail" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="maxwidth" Value="32765" RecordedValue="32765" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rowheight" Value="27" RecordedValue="27" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sectionHeight" Value="216" RecordedValue="216" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="FORM" Value="IESS02" RecordedValue="IESS02" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="market" Value="en-IN" RecordedValue="en-IN" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="3f3454d6-41bf-49a0-973e-b2b3671a670a" Version="1.1" Url="http://api.bing.com/qsml.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="query" Value="http%3A%2F%2Ftailsp" RecordedValue="http%3A%2F%2Ftailsp" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="maxwidth" Value="32765" RecordedValue="32765" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rowheight" Value="27" RecordedValue="27" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sectionHeight" Value="216" RecordedValue="216" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="FORM" Value="IESS02" RecordedValue="IESS02" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="market" Value="en-IN" RecordedValue="en-IN" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="4ab15c89-ec7e-4ecf-a3df-4516e64e4e14" Version="1.1" Url="http://api.bing.com/qsml.aspx" ThinkTime="2" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="query" Value="http%3A%2F%2Ftailspin" RecordedValue="http%3A%2F%2Ftailspin" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="maxwidth" Value="32765" RecordedValue="32765" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rowheight" Value="27" RecordedValue="27" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sectionHeight" Value="216" RecordedValue="216" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="FORM" Value="IESS02" RecordedValue="IESS02" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="market" Value="en-IN" RecordedValue="en-IN" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="41a598bf-88b8-4f25-88bf-423e5423b1a9" Version="1.1" Url="http://api.bing.com/qsml.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="query" Value="http%3A%2F%2Ftailspi" RecordedValue="http%3A%2F%2Ftailspi" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="maxwidth" Value="32765" RecordedValue="32765" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rowheight" Value="27" RecordedValue="27" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sectionHeight" Value="216" RecordedValue="216" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="FORM" Value="IESS02" RecordedValue="IESS02" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="market" Value="en-IN" RecordedValue="en-IN" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="f775c35a-c21b-4a28-8fbc-c4f0e97bd3ee" Version="1.1" Url="http://api.bing.com/qsml.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="query" Value="http%3A%2F%2Ftail" RecordedValue="http%3A%2F%2Ftail" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="maxwidth" Value="32765" RecordedValue="32765" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rowheight" Value="27" RecordedValue="27" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sectionHeight" Value="216" RecordedValue="216" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="FORM" Value="IESS02" RecordedValue="IESS02" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="market" Value="en-IN" RecordedValue="en-IN" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="29a5df2a-6dae-46c3-a645-044d2b6760c0" Version="1.1" Url="http://api.bing.com/qsml.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="query" Value="http%3A%2F%2Ft" RecordedValue="http%3A%2F%2Ft" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="maxwidth" Value="32765" RecordedValue="32765" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rowheight" Value="27" RecordedValue="27" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sectionHeight" Value="216" RecordedValue="216" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="FORM" Value="IESS02" RecordedValue="IESS02" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="market" Value="en-IN" RecordedValue="en-IN" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="b2db75ab-335b-430a-97b1-e155ad66d99a" Version="1.1" Url="http://api.bing.com/qsml.aspx" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="query" Value="http%3A%2F%2F" RecordedValue="http%3A%2F%2F" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="maxwidth" Value="32765" RecordedValue="32765" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rowheight" Value="27" RecordedValue="27" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sectionHeight" Value="216" RecordedValue="216" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="FORM" Value="IESS02" RecordedValue="IESS02" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="market" Value="en-IN" RecordedValue="en-IN" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="b81167f8-8531-4e5b-b2c4-56b134344df4" Version="1.1" Url="http://api.bing.com/qsml.aspx" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="query" Value="http%3A%2F%2Fms" RecordedValue="http%3A%2F%2Fms" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="maxwidth" Value="32765" RecordedValue="32765" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rowheight" Value="27" RecordedValue="27" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sectionHeight" Value="216" RecordedValue="216" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="FORM" Value="IESS02" RecordedValue="IESS02" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="market" Value="en-IN" RecordedValue="en-IN" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="360bb942-85ea-4dad-b9be-4d39371c5863" Version="1.1" Url="http://api.bing.com/qsml.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="query" Value="http%3A%2F%2Fmsazure" RecordedValue="http%3A%2F%2Fmsazure" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="maxwidth" Value="32765" RecordedValue="32765" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rowheight" Value="27" RecordedValue="27" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sectionHeight" Value="216" RecordedValue="216" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="FORM" Value="IESS02" RecordedValue="IESS02" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="market" Value="en-IN" RecordedValue="en-IN" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="2e65fee4-313c-4811-801c-b93c35407861" Version="1.1" Url="http://api.bing.com/qsml.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="query" Value="http%3A%2F%2Fmsazureclo" RecordedValue="http%3A%2F%2Fmsazureclo" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="maxwidth" Value="32765" RecordedValue="32765" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rowheight" Value="27" RecordedValue="27" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sectionHeight" Value="216" RecordedValue="216" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="FORM" Value="IESS02" RecordedValue="IESS02" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="market" Value="en-IN" RecordedValue="en-IN" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="6358d0c4-d1cf-4e39-953f-4ffeef7df88a" Version="1.1" Url="http://api.bing.com/qsml.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="query" Value="http%3A%2F%2Fmsazureclou" RecordedValue="http%3A%2F%2Fmsazureclou" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="maxwidth" Value="32765" RecordedValue="32765" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rowheight" Value="27" RecordedValue="27" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sectionHeight" Value="216" RecordedValue="216" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="FORM" Value="IESS02" RecordedValue="IESS02" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="market" Value="en-IN" RecordedValue="en-IN" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="1f1016ed-0c39-4ac4-b0f7-7f38b6e2c708" Version="1.1" Url="http://api.bing.com/qsml.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="query" Value="http%3A%2F%2Fmsazurecloud" RecordedValue="http%3A%2F%2Fmsazurecloud" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="maxwidth" Value="32765" RecordedValue="32765" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rowheight" Value="27" RecordedValue="27" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sectionHeight" Value="216" RecordedValue="216" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="FORM" Value="IESS02" RecordedValue="IESS02" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="market" Value="en-IN" RecordedValue="en-IN" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="6251f815-78ef-41ad-87df-278e1b85f47c" Version="1.1" Url="http://api.bing.com/qsml.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="query" Value="http%3A%2F%2Fmsazureclouds" RecordedValue="http%3A%2F%2Fmsazureclouds" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="maxwidth" Value="32765" RecordedValue="32765" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rowheight" Value="27" RecordedValue="27" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sectionHeight" Value="216" RecordedValue="216" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="FORM" Value="IESS02" RecordedValue="IESS02" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="market" Value="en-IN" RecordedValue="en-IN" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="a6326aac-7e2c-4c31-843e-6458d53906b0" Version="1.1" Url="http://api.bing.com/qsml.aspx" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="query" Value="http%3A%2F%2Fmsazurecloudserv" RecordedValue="http%3A%2F%2Fmsazurecloudserv" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="maxwidth" Value="32765" RecordedValue="32765" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rowheight" Value="27" RecordedValue="27" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sectionHeight" Value="216" RecordedValue="216" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="FORM" Value="IESS02" RecordedValue="IESS02" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="market" Value="en-IN" RecordedValue="en-IN" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="f1627795-abbf-412f-a22e-b9c5f7d07479" Version="1.1" Url="http://api.bing.com/qsml.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="query" Value="http%3A%2F%2Fmsazurecloudservice." RecordedValue="http%3A%2F%2Fmsazurecloudservice." CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="maxwidth" Value="32765" RecordedValue="32765" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rowheight" Value="27" RecordedValue="27" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sectionHeight" Value="216" RecordedValue="216" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="FORM" Value="IESS02" RecordedValue="IESS02" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="market" Value="en-IN" RecordedValue="en-IN" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="83dd4ab8-b9e8-49c8-be75-da7132a77b69" Version="1.1" Url="http://api.bing.com/qsml.aspx" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="query" Value="http%3A%2F%2Fmsazurecloudservice.a" RecordedValue="http%3A%2F%2Fmsazurecloudservice.a" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="maxwidth" Value="32765" RecordedValue="32765" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rowheight" Value="27" RecordedValue="27" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sectionHeight" Value="216" RecordedValue="216" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="FORM" Value="IESS02" RecordedValue="IESS02" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="market" Value="en-IN" RecordedValue="en-IN" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="55dfcdca-8503-4984-a9ec-3f972e6b0747" Version="1.1" Url="http://api.bing.com/qsml.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="query" Value="http%3A%2F%2Fmsazurecloudservice.cl" RecordedValue="http%3A%2F%2Fmsazurecloudservice.cl" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="maxwidth" Value="32765" RecordedValue="32765" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rowheight" Value="27" RecordedValue="27" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sectionHeight" Value="216" RecordedValue="216" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="FORM" Value="IESS02" RecordedValue="IESS02" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="market" Value="en-IN" RecordedValue="en-IN" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="261b7c94-0e10-4296-9f7b-deac6cb0ad06" Version="1.1" Url="http://api.bing.com/qsml.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="query" Value="http%3A%2F%2Fmsazurecloudservice.clo" RecordedValue="http%3A%2F%2Fmsazurecloudservice.clo" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="maxwidth" Value="32765" RecordedValue="32765" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rowheight" Value="27" RecordedValue="27" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sectionHeight" Value="216" RecordedValue="216" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="FORM" Value="IESS02" RecordedValue="IESS02" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="market" Value="en-IN" RecordedValue="en-IN" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="d1f1960a-0cbf-4044-8c52-8145deb2a7eb" Version="1.1" Url="http://api.bing.com/qsml.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="query" Value="http%3A%2F%2Fmsazurecloudservice.cloud" RecordedValue="http%3A%2F%2Fmsazurecloudservice.cloud" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="maxwidth" Value="32765" RecordedValue="32765" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rowheight" Value="27" RecordedValue="27" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sectionHeight" Value="216" RecordedValue="216" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="FORM" Value="IESS02" RecordedValue="IESS02" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="market" Value="en-IN" RecordedValue="en-IN" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="74785b7d-ae67-4dcc-ae81-a04136ff703f" Version="1.1" Url="http://api.bing.com/qsml.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="query" Value="http%3A%2F%2Fmsazurecloudservice.cloudapp" RecordedValue="http%3A%2F%2Fmsazurecloudservice.cloudapp" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="maxwidth" Value="32765" RecordedValue="32765" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rowheight" Value="27" RecordedValue="27" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sectionHeight" Value="216" RecordedValue="216" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="FORM" Value="IESS02" RecordedValue="IESS02" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="market" Value="en-IN" RecordedValue="en-IN" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="c08b444a-5878-40af-9762-a3decea5c33f" Version="1.1" Url="http://api.bing.com/qsml.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="query" Value="http%3A%2F%2Fmsazurecloudservice.cloudapp." RecordedValue="http%3A%2F%2Fmsazurecloudservice.cloudapp." CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="maxwidth" Value="32765" RecordedValue="32765" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rowheight" Value="27" RecordedValue="27" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sectionHeight" Value="216" RecordedValue="216" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="FORM" Value="IESS02" RecordedValue="IESS02" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="market" Value="en-IN" RecordedValue="en-IN" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="370c45b4-a6f2-48bf-9da8-b5df83ff9cbd" Version="1.1" Url="http://api.bing.com/qsml.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="query" Value="http%3A%2F%2Fmsazurecloudservice.cloudapp.n" RecordedValue="http%3A%2F%2Fmsazurecloudservice.cloudapp.n" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="maxwidth" Value="32765" RecordedValue="32765" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rowheight" Value="27" RecordedValue="27" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sectionHeight" Value="216" RecordedValue="216" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="FORM" Value="IESS02" RecordedValue="IESS02" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="market" Value="en-IN" RecordedValue="en-IN" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="2d28639d-5b00-417b-a49e-4ca20b7324d5" Version="1.1" Url="http://api.bing.com/qsml.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="query" Value="http%3A%2F%2Fmsazurecloudservice.cloudapp.net" RecordedValue="http%3A%2F%2Fmsazurecloudservice.cloudapp.net" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="maxwidth" Value="32765" RecordedValue="32765" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rowheight" Value="27" RecordedValue="27" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sectionHeight" Value="216" RecordedValue="216" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="FORM" Value="IESS02" RecordedValue="IESS02" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="market" Value="en-IN" RecordedValue="en-IN" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="19327924-7a0a-4c2f-be9a-c1ff6f87a053" Version="1.1" Url="http://api.bing.com/qsml.aspx" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="query" Value="http%3A%2F%2Fmsazurecloudservice.cloudapp.net%3A" RecordedValue="http%3A%2F%2Fmsazurecloudservice.cloudapp.net%3A" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="maxwidth" Value="32765" RecordedValue="32765" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rowheight" Value="27" RecordedValue="27" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sectionHeight" Value="216" RecordedValue="216" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="FORM" Value="IESS02" RecordedValue="IESS02" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="market" Value="en-IN" RecordedValue="en-IN" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="f9ccb265-c121-42c8-bda3-9e37041955f4" Version="1.1" Url="http://api.bing.com/qsml.aspx" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="query" Value="http%3A%2F%2Fmsazurecloudservice.cloudapp.net%3A89" RecordedValue="http%3A%2F%2Fmsazurecloudservice.cloudapp.net%3A89" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="maxwidth" Value="32765" RecordedValue="32765" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rowheight" Value="27" RecordedValue="27" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sectionHeight" Value="216" RecordedValue="216" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="FORM" Value="IESS02" RecordedValue="IESS02" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="market" Value="en-IN" RecordedValue="en-IN" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="2d41a80b-06a1-4397-8b27-ed844c9b4bcf" Version="1.1" Url="http://api.bing.com/qsml.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="query" Value="http%3A%2F%2Fmsazurecloudservice.cloudapp.net%3A89%2F" RecordedValue="http%3A%2F%2Fmsazurecloudservice.cloudapp.net%3A89%2F" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="maxwidth" Value="32765" RecordedValue="32765" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rowheight" Value="27" RecordedValue="27" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sectionHeight" Value="216" RecordedValue="216" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="FORM" Value="IESS02" RecordedValue="IESS02" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="market" Value="en-IN" RecordedValue="en-IN" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="cade85b2-f0f2-464a-870c-f921f4bb4797" Version="1.1" Url="http://msazurecloudservice.cloudapp.net:89/" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <CorrelationExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam2.slug" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="?slug=" />
+            <RuleParameter Name="EndsWith" Value="&quot;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+      </CorrelationExtractionRules>
+    </Request>
+    <Request Method="OPTIONS" Guid="85363249-669d-48a8-b5f0-5b6f7183c361" Version="1.1" Url="http://dc.services.visualstudio.com/v2/track" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <StringHttpBody ContentType="" InsertByteOrderMark="False">
+      </StringHttpBody>
+    </Request>
+    <Request Method="POST" Guid="570f4cf9-4679-487e-8421-393ebbf5eca9" Version="1.1" Url="http://dc.services.visualstudio.com/v2/track" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://msazurecloudservice.cloudapp.net:89/" />
+      </Headers>
+      <StringHttpBody ContentType="application/json" InsertByteOrderMark="False">WwB7ACIAdABpAG0AZQAiADoAIgAyADAAMQA1AC0AMQAyAC0AMAAyAFQAMAA2ADoAMQAzADoAMQA3AC4ANQAzADYAWgAiACwAIgBpAEsAZQB5ACIAOgAiADIAZgBkAGIAOAAwADQAYQAtADkAOQA1ADIALQA0ADMAMQAxAC0AYgBhAGEANAAtAGQAZQAxAGQAZQA5ADgAYgA2AGQAZgAzACIALAAiAG4AYQBtAGUAIgA6ACIATQBpAGMAcgBvAHMAbwBmAHQALgBBAHAAcABsAGkAYwBhAHQAaQBvAG4ASQBuAHMAaQBnAGgAdABzAC4AUwBlAHMAcwBpAG8AbgBTAHQAYQB0AGUAIgAsACIAdABhAGcAcwAiADoAewAiAGEAaQAuAHMAZQBzAHMAaQBvAG4ALgBpAGQAIgA6ACIANgAwADYAMAA0AEMARQA5AC0AOABGAEUAMAAtADQAMQAyADgALQBCAEMANwAzAC0AOQBEAEQAOQBEAEMAMABDAEUAQwAyADgAIgAsACIAYQBpAC4AcwBlAHMAcwBpAG8AbgAuAGkAcwBGAGkAcgBzAHQAIgA6ACIAdAByAHUAZQAiACwAIgBhAGkALgBkAGUAdgBpAGMAZQAuAGkAZAAiADoAIgBiAHIAbwB3AHMAZQByACIALAAiAGEAaQAuAGQAZQB2AGkAYwBlAC4AbABvAGMAYQBsAGUAIgA6ACIAZQBuAC0AVQBTACIALAAiAGEAaQAuAGQAZQB2AGkAYwBlAC4AcwBjAHIAZQBlAG4AUgBlAHMAbwBsAHUAdABpAG8AbgAiADoAIgAxADYANwAwAFgAOQAzADkAIgAsACIAYQBpAC4AZABlAHYAaQBjAGUALgB0AHkAcABlACIAOgAiAGIAcgBvAHcAcwBlAHIAIgAsACIAYQBpAC4AaQBuAHQAZQByAG4AYQBsAC4AcwBkAGsAVgBlAHIAcwBpAG8AbgAiADoAIgBKAGEAdgBhAFMAYwByAGkAcAB0ADoAMAAuADEAOQAuADEAIgAsACIAYQBpAC4AdQBzAGUAcgAuAGEAYwBjAG8AdQBuAHQAQQBjAHEAdQBpAHMAaQB0AGkAbwBuAEQAYQB0AGUAIgA6ACIAMgAwADEANQAtADEAMgAtADAAMgBUADAANgA6ADEAMwA6ADEANgAuADQAMQAxAFoAIgAsACIAYQBpAC4AdQBzAGUAcgAuAGkAZAAiADoAIgA0ADMAOABDAEUANgAwAEUALQA2ADcAMgA4AC0ANAA1ADYAOAAtADgAQwBFADMALQBCADAANgAyADQAMAAyAEYAOQBFADcAMwAiACwAIgBhAGkALgBvAHAAZQByAGEAdABpAG8AbgAuAGkAZAAiADoAIgA3AEMAMABFADkAMAA4AEEALQA0ADAAQQA5AC0ANABGADYAOAAtAEIAOQA2ADgALQAwADIAQwA2ADEANgBBADMANQBCAEEAQgAiACwAIgBhAGkALgBvAHAAZQByAGEAdABpAG8AbgAuAG4AYQBtAGUAIgA6ACIALwAiAH0ALAAiAGQAYQB0AGEAIgA6AHsAIgBiAGEAcwBlAFQAeQBwAGUAIgA6ACIAUwBlAHMAcwBpAG8AbgBTAHQAYQB0AGUARABhAHQAYQAiACwAIgBiAGEAcwBlAEQAYQB0AGEAIgA6AHsAIgB2AGUAcgAiADoAMgAsACIAcwB0AGEAdABlACIAOgAwAH0AfQB9ACwAewAiAHQAaQBtAGUAIgA6ACIAMgAwADEANQAtADEAMgAtADAAMgBUADAANgA6ADEAMwA6ADEANwAuADUAMwA1AFoAIgAsACIAaQBLAGUAeQAiADoAIgAyAGYAZABiADgAMAA0AGEALQA5ADkANQAyAC0ANAAzADEAMQAtAGIAYQBhADQALQBkAGUAMQBkAGUAOQA4AGIANgBkAGYAMwAiACwAIgBuAGEAbQBlACIAOgAiAE0AaQBjAHIAbwBzAG8AZgB0AC4AQQBwAHAAbABpAGMAYQB0AGkAbwBuAEkAbgBzAGkAZwBoAHQAcwAuAFAAYQBnAGUAdgBpAGUAdwAiACwAIgB0AGEAZwBzACIAOgB7ACIAYQBpAC4AcwBlAHMAcwBpAG8AbgAuAGkAZAAiADoAIgA2ADAANgAwADQAQwBFADkALQA4AEYARQAwAC0ANAAxADIAOAAtAEIAQwA3ADMALQA5AEQARAA5AEQAQwAwAEMARQBDADIAOAAiACwAIgBhAGkALgBzAGUAcwBzAGkAbwBuAC4AaQBzAEYAaQByAHMAdAAiADoAIgB0AHIAdQBlACIALAAiAGEAaQAuAGQAZQB2AGkAYwBlAC4AaQBkACIAOgAiAGIAcgBvAHcAcwBlAHIAIgAsACIAYQBpAC4AZABlAHYAaQBjAGUALgBsAG8AYwBhAGwAZQAiADoAIgBlAG4ALQBVAFMAIgAsACIAYQBpAC4AZABlAHYAaQBjAGUALgBzAGMAcgBlAGUAbgBSAGUAcwBvAGwAdQB0AGkAbwBuACIAOgAiADEANgA3ADAAWAA5ADMAOQAiACwAIgBhAGkALgBkAGUAdgBpAGMAZQAuAHQAeQBwAGUAIgA6ACIAYgByAG8AdwBzAGUAcgAiACwAIgBhAGkALgBpAG4AdABlAHIAbgBhAGwALgBzAGQAawBWAGUAcgBzAGkAbwBuACIAOgAiAEoAYQB2AGEAUwBjAHIAaQBwAHQAOgAwAC4AMQA5AC4AMQAiACwAIgBhAGkALgB1AHMAZQByAC4AYQBjAGMAbwB1AG4AdABBAGMAcQB1AGkAcwBpAHQAaQBvAG4ARABhAHQAZQAiADoAIgAyADAAMQA1AC0AMQAyAC0AMAAyAFQAMAA2ADoAMQAzADoAMQA2AC4ANAAxADEAWgAiACwAIgBhAGkALgB1AHMAZQByAC4AaQBkACIAOgAiADQAMwA4AEMARQA2ADAARQAtADYANwAyADgALQA0ADUANgA4AC0AOABDAEUAMwAtAEIAMAA2ADIANAAwADIARgA5AEUANwAzACIALAAiAGEAaQAuAG8AcABlAHIAYQB0AGkAbwBuAC4AaQBkACIAOgAiADcAQwAwAEUAOQAwADgAQQAtADQAMABBADkALQA0AEYANgA4AC0AQgA5ADYAOAAtADAAMgBDADYAMQA2AEEAMwA1AEIAQQBCACIALAAiAGEAaQAuAG8AcABlAHIAYQB0AGkAbwBuAC4AbgBhAG0AZQAiADoAIgAvACIAfQAsACIAZABhAHQAYQAiADoAewAiAGIAYQBzAGUAVAB5AHAAZQAiADoAIgBQAGEAZwBlAHYAaQBlAHcARABhAHQAYQAiACwAIgBiAGEAcwBlAEQAYQB0AGEAIgA6AHsAIgB2AGUAcgAiADoAMgAsACIAbgBhAG0AZQAiADoAIgBIAG8AbQBlACAALQAgAFQAYQBpAGwAcwBwAGkAbgAgAFQAbwB5AHMAIgAsACIAdQByAGwAIgA6ACIAaAB0AHQAcAA6AC8ALwBtAHMAYQB6AHUAcgBlAGMAbABvAHUAZABzAGUAcgB2AGkAYwBlAC4AYwBsAG8AdQBkAGEAcABwAC4AbgBlAHQAOgA4ADkALwAiACwAIgBkAHUAcgBhAHQAaQBvAG4AIgA6ACIAMAAwADoAMAAwADoAMAA2AC4AMAA1ADAAIgB9AH0AfQAsAHsAIgB0AGkAbQBlACIAOgAiADIAMAAxADUALQAxADIALQAwADIAVAAwADYAOgAxADMAOgAxADcALgA1ADYAMABaACIALAAiAGkASwBlAHkAIgA6ACIAMgBmAGQAYgA4ADAANABhAC0AOQA5ADUAMgAtADQAMwAxADEALQBiAGEAYQA0AC0AZABlADEAZABlADkAOABiADYAZABmADMAIgAsACIAbgBhAG0AZQAiADoAIgBNAGkAYwByAG8AcwBvAGYAdAAuAEEAcABwAGwAaQBjAGEAdABpAG8AbgBJAG4AcwBpAGcAaAB0AHMALgBQAGEAZwBlAHYAaQBlAHcAUABlAHIAZgBvAHIAbQBhAG4AYwBlACIALAAiAHQAYQBnAHMAIgA6AHsAIgBhAGkALgBzAGUAcwBzAGkAbwBuAC4AaQBkACIAOgAiADYAMAA2ADAANABDAEUAOQAtADgARgBFADAALQA0ADEAMgA4AC0AQgBDADcAMwAtADkARABEADkARABDADAAQwBFAEMAMgA4ACIALAAiAGEAaQAuAHMAZQBzAHMAaQBvAG4ALgBpAHMARgBpAHIAcwB0ACIAOgAiAHQAcgB1AGUAIgAsACIAYQBpAC4AZABlAHYAaQBjAGUALgBpAGQAIgA6ACIAYgByAG8AdwBzAGUAcgAiACwAIgBhAGkALgBkAGUAdgBpAGMAZQAuAGwAbwBjAGEAbABlACIAOgAiAGUAbgAtAFUAUwAiACwAIgBhAGkALgBkAGUAdgBpAGMAZQAuAHMAYwByAGUAZQBuAFIAZQBzAG8AbAB1AHQAaQBvAG4AIgA6ACIAMQA2ADcAMABYADkAMwA5ACIALAAiAGEAaQAuAGQAZQB2AGkAYwBlAC4AdAB5AHAAZQAiADoAIgBiAHIAbwB3AHMAZQByACIALAAiAGEAaQAuAGkAbgB0AGUAcgBuAGEAbAAuAHMAZABrAFYAZQByAHMAaQBvAG4AIgA6ACIASgBhAHYAYQBTAGMAcgBpAHAAdAA6ADAALgAxADkALgAxACIALAAiAGEAaQAuAHUAcwBlAHIALgBhAGMAYwBvAHUAbgB0AEEAYwBxAHUAaQBzAGkAdABpAG8AbgBEAGEAdABlACIAOgAiADIAMAAxADUALQAxADIALQAwADIAVAAwADYAOgAxADMAOgAxADYALgA0ADEAMQBaACIALAAiAGEAaQAuAHUAcwBlAHIALgBpAGQAIgA6ACIANAAzADgAQwBFADYAMABFAC0ANgA3ADIAOAAtADQANQA2ADgALQA4AEMARQAzAC0AQgAwADYAMgA0ADAAMgBGADkARQA3ADMAIgAsACIAYQBpAC4AbwBwAGUAcgBhAHQAaQBvAG4ALgBpAGQAIgA6ACIANwBDADAARQA5ADAAOABBAC0ANAAwAEEAOQAtADQARgA2ADgALQBCADkANgA4AC0AMAAyAEMANgAxADYAQQAzADUAQgBBAEIAIgAsACIAYQBpAC4AbwBwAGUAcgBhAHQAaQBvAG4ALgBuAGEAbQBlACIAOgAiAC8AIgB9ACwAIgBkAGEAdABhACIAOgB7ACIAYgBhAHMAZQBUAHkAcABlACIAOgAiAFAAYQBnAGUAdgBpAGUAdwBQAGUAcgBmAG8AcgBtAGEAbgBjAGUARABhAHQAYQAiACwAIgBiAGEAcwBlAEQAYQB0AGEAIgA6AHsAIgB2AGUAcgAiADoAMgAsACIAbgBhAG0AZQAiADoAIgBIAG8AbQBlACAALQAgAFQAYQBpAGwAcwBwAGkAbgAgAFQAbwB5AHMAIgAsACIAdQByAGwAIgA6ACIAaAB0AHQAcAA6AC8ALwBtAHMAYQB6AHUAcgBlAGMAbABvAHUAZABzAGUAcgB2AGkAYwBlAC4AYwBsAG8AdQBkAGEAcABwAC4AbgBlAHQAOgA4ADkALwAiACwAIgBkAHUAcgBhAHQAaQBvAG4AIgA6ACIAMAAwADoAMAAwADoAMAA2AC4AMAA1ADAAIgAsACIAcABlAHIAZgBUAG8AdABhAGwAIgA6ACIAMAAwADoAMAAwADoAMAA2AC4AMAA1ADAAIgAsACIAbgBlAHQAdwBvAHIAawBDAG8AbgBuAGUAYwB0ACIAOgAiADAAMAA6ADAAMAA6ADAAMAAuADAAMAAxACIALAAiAHMAZQBuAHQAUgBlAHEAdQBlAHMAdAAiADoAIgAwADAAOgAwADAAOgAwADAALgAwADAANAAiACwAIgByAGUAYwBlAGkAdgBlAGQAUgBlAHMAcABvAG4AcwBlACIAOgAiADAAMAA6ADAAMAA6ADAAMAAuADAAMAA0ACIALAAiAGQAbwBtAFAAcgBvAGMAZQBzAHMAaQBuAGcAIgA6ACIAMAAwADoAMAAwADoAMAAxAC4ANQAxADAAIgB9AH0AfQBdAA==</StringHttpBody>
+    </Request>
+    <Request Method="GET" Guid="8f13ad9f-6785-486e-91c4-b7dd5f8e1efc" Version="1.1" Url="http://msazurecloudservice.cloudapp.net:89/" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://msazurecloudservice.cloudapp.net:89/" />
+      </Headers>
+      <CorrelationExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam1.sku" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="?sku=" />
+            <RuleParameter Name="EndsWith" Value="&quot;" />
+            <RuleParameter Name="Index" Value="2" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+      </CorrelationExtractionRules>
+      <QueryStringParameters>
+        <QueryStringParameter Name="slug" Value="model" RecordedValue="model" CorrelationBinding="{{QueryStringParam2.slug}}" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="aaf9570c-a057-4e00-96fa-1d6e8b8cf259" Version="1.1" Url="http://dc.services.visualstudio.com/v2/track" ThinkTime="2" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://msazurecloudservice.cloudapp.net:89/?slug=model" />
+      </Headers>
+      <StringHttpBody ContentType="application/json" InsertByteOrderMark="False">WwB7ACIAdABpAG0AZQAiADoAIgAyADAAMQA1AC0AMQAyAC0AMAAyAFQAMAA2ADoAMQAzADoAMgAwAC4AMAA0ADYAWgAiACwAIgBpAEsAZQB5ACIAOgAiADIAZgBkAGIAOAAwADQAYQAtADkAOQA1ADIALQA0ADMAMQAxAC0AYgBhAGEANAAtAGQAZQAxAGQAZQA5ADgAYgA2AGQAZgAzACIALAAiAG4AYQBtAGUAIgA6ACIATQBpAGMAcgBvAHMAbwBmAHQALgBBAHAAcABsAGkAYwBhAHQAaQBvAG4ASQBuAHMAaQBnAGgAdABzAC4AUABhAGcAZQB2AGkAZQB3ACIALAAiAHQAYQBnAHMAIgA6AHsAIgBhAGkALgBzAGUAcwBzAGkAbwBuAC4AaQBkACIAOgAiADYAMAA2ADAANABDAEUAOQAtADgARgBFADAALQA0ADEAMgA4AC0AQgBDADcAMwAtADkARABEADkARABDADAAQwBFAEMAMgA4ACIALAAiAGEAaQAuAGQAZQB2AGkAYwBlAC4AaQBkACIAOgAiAGIAcgBvAHcAcwBlAHIAIgAsACIAYQBpAC4AZABlAHYAaQBjAGUALgBsAG8AYwBhAGwAZQAiADoAIgBlAG4ALQBVAFMAIgAsACIAYQBpAC4AZABlAHYAaQBjAGUALgBzAGMAcgBlAGUAbgBSAGUAcwBvAGwAdQB0AGkAbwBuACIAOgAiADEANgA3ADAAWAA5ADMAOQAiACwAIgBhAGkALgBkAGUAdgBpAGMAZQAuAHQAeQBwAGUAIgA6ACIAYgByAG8AdwBzAGUAcgAiACwAIgBhAGkALgBpAG4AdABlAHIAbgBhAGwALgBzAGQAawBWAGUAcgBzAGkAbwBuACIAOgAiAEoAYQB2AGEAUwBjAHIAaQBwAHQAOgAwAC4AMQA5AC4AMQAiACwAIgBhAGkALgB1AHMAZQByAC4AaQBkACIAOgAiADQAMwA4AEMARQA2ADAARQAtADYANwAyADgALQA0ADUANgA4AC0AOABDAEUAMwAtAEIAMAA2ADIANAAwADIARgA5AEUANwAzACIALAAiAGEAaQAuAG8AcABlAHIAYQB0AGkAbwBuAC4AaQBkACIAOgAiADYAMABEADQAQQAyAEUARgAtAEEANwBEADQALQA0ADMANgAzAC0AQQBGAEMANgAtAEIANQAyADgARABCAEQAMwA1ADgANgBEACIALAAiAGEAaQAuAG8AcABlAHIAYQB0AGkAbwBuAC4AbgBhAG0AZQAiADoAIgAvACIAfQAsACIAZABhAHQAYQAiADoAewAiAGIAYQBzAGUAVAB5AHAAZQAiADoAIgBQAGEAZwBlAHYAaQBlAHcARABhAHQAYQAiACwAIgBiAGEAcwBlAEQAYQB0AGEAIgA6AHsAIgB2AGUAcgAiADoAMgAsACIAbgBhAG0AZQAiADoAIgBIAG8AbQBlACAALQAgAFQAYQBpAGwAcwBwAGkAbgAgAFQAbwB5AHMAIgAsACIAdQByAGwAIgA6ACIAaAB0AHQAcAA6AC8ALwBtAHMAYQB6AHUAcgBlAGMAbABvAHUAZABzAGUAcgB2AGkAYwBlAC4AYwBsAG8AdQBkAGEAcABwAC4AbgBlAHQAOgA4ADkALwA/AHMAbAB1AGcAPQBtAG8AZABlAGwAIgAsACIAZAB1AHIAYQB0AGkAbwBuACIAOgAiADAAMAA6ADAAMAA6ADAAMAAuADkANAA5ACIAfQB9AH0ALAB7ACIAdABpAG0AZQAiADoAIgAyADAAMQA1AC0AMQAyAC0AMAAyAFQAMAA2ADoAMQAzADoAMgAwAC4AMAA1ADIAWgAiACwAIgBpAEsAZQB5ACIAOgAiADIAZgBkAGIAOAAwADQAYQAtADkAOQA1ADIALQA0ADMAMQAxAC0AYgBhAGEANAAtAGQAZQAxAGQAZQA5ADgAYgA2AGQAZgAzACIALAAiAG4AYQBtAGUAIgA6ACIATQBpAGMAcgBvAHMAbwBmAHQALgBBAHAAcABsAGkAYwBhAHQAaQBvAG4ASQBuAHMAaQBnAGgAdABzAC4AUABhAGcAZQB2AGkAZQB3AFAAZQByAGYAbwByAG0AYQBuAGMAZQAiACwAIgB0AGEAZwBzACIAOgB7ACIAYQBpAC4AcwBlAHMAcwBpAG8AbgAuAGkAZAAiADoAIgA2ADAANgAwADQAQwBFADkALQA4AEYARQAwAC0ANAAxADIAOAAtAEIAQwA3ADMALQA5AEQARAA5AEQAQwAwAEMARQBDADIAOAAiACwAIgBhAGkALgBkAGUAdgBpAGMAZQAuAGkAZAAiADoAIgBiAHIAbwB3AHMAZQByACIALAAiAGEAaQAuAGQAZQB2AGkAYwBlAC4AbABvAGMAYQBsAGUAIgA6ACIAZQBuAC0AVQBTACIALAAiAGEAaQAuAGQAZQB2AGkAYwBlAC4AcwBjAHIAZQBlAG4AUgBlAHMAbwBsAHUAdABpAG8AbgAiADoAIgAxADYANwAwAFgAOQAzADkAIgAsACIAYQBpAC4AZABlAHYAaQBjAGUALgB0AHkAcABlACIAOgAiAGIAcgBvAHcAcwBlAHIAIgAsACIAYQBpAC4AaQBuAHQAZQByAG4AYQBsAC4AcwBkAGsAVgBlAHIAcwBpAG8AbgAiADoAIgBKAGEAdgBhAFMAYwByAGkAcAB0ADoAMAAuADEAOQAuADEAIgAsACIAYQBpAC4AdQBzAGUAcgAuAGkAZAAiADoAIgA0ADMAOABDAEUANgAwAEUALQA2ADcAMgA4AC0ANAA1ADYAOAAtADgAQwBFADMALQBCADAANgAyADQAMAAyAEYAOQBFADcAMwAiACwAIgBhAGkALgBvAHAAZQByAGEAdABpAG8AbgAuAGkAZAAiADoAIgA2ADAARAA0AEEAMgBFAEYALQBBADcARAA0AC0ANAAzADYAMwAtAEEARgBDADYALQBCADUAMgA4AEQAQgBEADMANQA4ADYARAAiACwAIgBhAGkALgBvAHAAZQByAGEAdABpAG8AbgAuAG4AYQBtAGUAIgA6ACIALwAiAH0ALAAiAGQAYQB0AGEAIgA6AHsAIgBiAGEAcwBlAFQAeQBwAGUAIgA6ACIAUABhAGcAZQB2AGkAZQB3AFAAZQByAGYAbwByAG0AYQBuAGMAZQBEAGEAdABhACIALAAiAGIAYQBzAGUARABhAHQAYQAiADoAewAiAHYAZQByACIAOgAyACwAIgBuAGEAbQBlACIAOgAiAEgAbwBtAGUAIAAtACAAVABhAGkAbABzAHAAaQBuACAAVABvAHkAcwAiACwAIgB1AHIAbAAiADoAIgBoAHQAdABwADoALwAvAG0AcwBhAHoAdQByAGUAYwBsAG8AdQBkAHMAZQByAHYAaQBjAGUALgBjAGwAbwB1AGQAYQBwAHAALgBuAGUAdAA6ADgAOQAvAD8AcwBsAHUAZwA9AG0AbwBkAGUAbAAiACwAIgBkAHUAcgBhAHQAaQBvAG4AIgA6ACIAMAAwADoAMAAwADoAMAAwAC4AOQA0ADkAIgAsACIAcABlAHIAZgBUAG8AdABhAGwAIgA6ACIAMAAwADoAMAAwADoAMAAwAC4AOQA0ADkAIgAsACIAbgBlAHQAdwBvAHIAawBDAG8AbgBuAGUAYwB0ACIAOgAiADAAMAA6ADAAMAA6ADAAMAAuADAAMAA3ACIALAAiAHMAZQBuAHQAUgBlAHEAdQBlAHMAdAAiADoAIgAwADAAOgAwADAAOgAwADAALgAwADAANAAiACwAIgByAGUAYwBlAGkAdgBlAGQAUgBlAHMAcABvAG4AcwBlACIAOgAiADAAMAA6ADAAMAA6ADAAMAAuADAAMAAyACIALAAiAGQAbwBtAFAAcgBvAGMAZQBzAHMAaQBuAGcAIgA6ACIAMAAwADoAMAAwADoAMAAwAC4AMwAxADAAIgB9AH0AfQBdAA==</StringHttpBody>
+    </Request>
+    <Request Method="GET" Guid="ab706a00-f481-43cb-9dfb-57b193ec139c" Version="1.1" Url="http://msazurecloudservice.cloudapp.net:89/home/show" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <DependentRequests>
+        <Request Method="GET" Guid="f20c77e7-9cfc-4f0c-a91e-217741b8a1b0" Version="1.1" Url="http://msazurecloudservice.cloudapp.net:89/home/favicon.ico" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="http://msazurecloudservice.cloudapp.net:89/Errors.html?aspxerrorpath=/home/favicon.ico" ReportingName="" IgnoreHttpStatusCode="False" />
+      </DependentRequests>
+      <Headers>
+        <Header Name="Referer" Value="http://msazurecloudservice.cloudapp.net:89/?slug=model" />
+      </Headers>
+      <ExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractHiddenFields, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="1" DisplayName="Extract Hidden Fields" Description="Extract all hidden fields from the response and place them into the test context.">
+          <RuleParameters>
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+      </ExtractionRules>
+      <QueryStringParameters>
+        <QueryStringParameter Name="sku" Value="modnwt" RecordedValue="modnwt" CorrelationBinding="{{QueryStringParam1.sku}}" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="d631b978-faa2-451d-8ea8-7fcb9f7cd54b" Version="1.1" Url="http://dc.services.visualstudio.com/v2/track" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://msazurecloudservice.cloudapp.net:89/home/show?sku=modnwt" />
+      </Headers>
+      <StringHttpBody ContentType="application/json" InsertByteOrderMark="False">WwB7ACIAdABpAG0AZQAiADoAIgAyADAAMQA1AC0AMQAyAC0AMAAyAFQAMAA2ADoAMQAzADoAMgAzAC4AMAA4ADQAWgAiACwAIgBpAEsAZQB5ACIAOgAiADIAZgBkAGIAOAAwADQAYQAtADkAOQA1ADIALQA0ADMAMQAxAC0AYgBhAGEANAAtAGQAZQAxAGQAZQA5ADgAYgA2AGQAZgAzACIALAAiAG4AYQBtAGUAIgA6ACIATQBpAGMAcgBvAHMAbwBmAHQALgBBAHAAcABsAGkAYwBhAHQAaQBvAG4ASQBuAHMAaQBnAGgAdABzAC4AUABhAGcAZQB2AGkAZQB3ACIALAAiAHQAYQBnAHMAIgA6AHsAIgBhAGkALgBzAGUAcwBzAGkAbwBuAC4AaQBkACIAOgAiADYAMAA2ADAANABDAEUAOQAtADgARgBFADAALQA0ADEAMgA4AC0AQgBDADcAMwAtADkARABEADkARABDADAAQwBFAEMAMgA4ACIALAAiAGEAaQAuAGQAZQB2AGkAYwBlAC4AaQBkACIAOgAiAGIAcgBvAHcAcwBlAHIAIgAsACIAYQBpAC4AZABlAHYAaQBjAGUALgBsAG8AYwBhAGwAZQAiADoAIgBlAG4ALQBVAFMAIgAsACIAYQBpAC4AZABlAHYAaQBjAGUALgBzAGMAcgBlAGUAbgBSAGUAcwBvAGwAdQB0AGkAbwBuACIAOgAiADEANgA3ADAAWAA5ADMAOQAiACwAIgBhAGkALgBkAGUAdgBpAGMAZQAuAHQAeQBwAGUAIgA6ACIAYgByAG8AdwBzAGUAcgAiACwAIgBhAGkALgBpAG4AdABlAHIAbgBhAGwALgBzAGQAawBWAGUAcgBzAGkAbwBuACIAOgAiAEoAYQB2AGEAUwBjAHIAaQBwAHQAOgAwAC4AMQA5AC4AMQAiACwAIgBhAGkALgB1AHMAZQByAC4AaQBkACIAOgAiADQAMwA4AEMARQA2ADAARQAtADYANwAyADgALQA0ADUANgA4AC0AOABDAEUAMwAtAEIAMAA2ADIANAAwADIARgA5AEUANwAzACIALAAiAGEAaQAuAG8AcABlAHIAYQB0AGkAbwBuAC4AaQBkACIAOgAiADEAMgAxADYARQA0AEMARgAtAEQARQAxADMALQA0AEQAQwA1AC0AQQBGADUAMAAtAEMARABGAEMANQA5ADAAOQAyADkAMgA2ACIALAAiAGEAaQAuAG8AcABlAHIAYQB0AGkAbwBuAC4AbgBhAG0AZQAiADoAIgAvAGgAbwBtAGUALwBzAGgAbwB3ACIAfQAsACIAZABhAHQAYQAiADoAewAiAGIAYQBzAGUAVAB5AHAAZQAiADoAIgBQAGEAZwBlAHYAaQBlAHcARABhAHQAYQAiACwAIgBiAGEAcwBlAEQAYQB0AGEAIgA6AHsAIgB2AGUAcgAiADoAMgAsACIAbgBhAG0AZQAiADoAIgBIAG8AbQBlACAALQAgAFQAYQBpAGwAcwBwAGkAbgAgAFQAbwB5AHMAIgAsACIAdQByAGwAIgA6ACIAaAB0AHQAcAA6AC8ALwBtAHMAYQB6AHUAcgBlAGMAbABvAHUAZABzAGUAcgB2AGkAYwBlAC4AYwBsAG8AdQBkAGEAcABwAC4AbgBlAHQAOgA4ADkALwBoAG8AbQBlAC8AcwBoAG8AdwA/AHMAawB1AD0AbQBvAGQAbgB3AHQAIgAsACIAZAB1AHIAYQB0AGkAbwBuACIAOgAiADAAMAA6ADAAMAA6ADAAMQAuADIAMQA5ACIAfQB9AH0ALAB7ACIAdABpAG0AZQAiADoAIgAyADAAMQA1AC0AMQAyAC0AMAAyAFQAMAA2ADoAMQAzADoAMgAzAC4AMAA5ADEAWgAiACwAIgBpAEsAZQB5ACIAOgAiADIAZgBkAGIAOAAwADQAYQAtADkAOQA1ADIALQA0ADMAMQAxAC0AYgBhAGEANAAtAGQAZQAxAGQAZQA5ADgAYgA2AGQAZgAzACIALAAiAG4AYQBtAGUAIgA6ACIATQBpAGMAcgBvAHMAbwBmAHQALgBBAHAAcABsAGkAYwBhAHQAaQBvAG4ASQBuAHMAaQBnAGgAdABzAC4AUABhAGcAZQB2AGkAZQB3AFAAZQByAGYAbwByAG0AYQBuAGMAZQAiACwAIgB0AGEAZwBzACIAOgB7ACIAYQBpAC4AcwBlAHMAcwBpAG8AbgAuAGkAZAAiADoAIgA2ADAANgAwADQAQwBFADkALQA4AEYARQAwAC0ANAAxADIAOAAtAEIAQwA3ADMALQA5AEQARAA5AEQAQwAwAEMARQBDADIAOAAiACwAIgBhAGkALgBkAGUAdgBpAGMAZQAuAGkAZAAiADoAIgBiAHIAbwB3AHMAZQByACIALAAiAGEAaQAuAGQAZQB2AGkAYwBlAC4AbABvAGMAYQBsAGUAIgA6ACIAZQBuAC0AVQBTACIALAAiAGEAaQAuAGQAZQB2AGkAYwBlAC4AcwBjAHIAZQBlAG4AUgBlAHMAbwBsAHUAdABpAG8AbgAiADoAIgAxADYANwAwAFgAOQAzADkAIgAsACIAYQBpAC4AZABlAHYAaQBjAGUALgB0AHkAcABlACIAOgAiAGIAcgBvAHcAcwBlAHIAIgAsACIAYQBpAC4AaQBuAHQAZQByAG4AYQBsAC4AcwBkAGsAVgBlAHIAcwBpAG8AbgAiADoAIgBKAGEAdgBhAFMAYwByAGkAcAB0ADoAMAAuADEAOQAuADEAIgAsACIAYQBpAC4AdQBzAGUAcgAuAGkAZAAiADoAIgA0ADMAOABDAEUANgAwAEUALQA2ADcAMgA4AC0ANAA1ADYAOAAtADgAQwBFADMALQBCADAANgAyADQAMAAyAEYAOQBFADcAMwAiACwAIgBhAGkALgBvAHAAZQByAGEAdABpAG8AbgAuAGkAZAAiADoAIgAxADIAMQA2AEUANABDAEYALQBEAEUAMQAzAC0ANABEAEMANQAtAEEARgA1ADAALQBDAEQARgBDADUAOQAwADkAMgA5ADIANgAiACwAIgBhAGkALgBvAHAAZQByAGEAdABpAG8AbgAuAG4AYQBtAGUAIgA6ACIALwBoAG8AbQBlAC8AcwBoAG8AdwAiAH0ALAAiAGQAYQB0AGEAIgA6AHsAIgBiAGEAcwBlAFQAeQBwAGUAIgA6ACIAUABhAGcAZQB2AGkAZQB3AFAAZQByAGYAbwByAG0AYQBuAGMAZQBEAGEAdABhACIALAAiAGIAYQBzAGUARABhAHQAYQAiADoAewAiAHYAZQByACIAOgAyACwAIgBuAGEAbQBlACIAOgAiAEgAbwBtAGUAIAAtACAAVABhAGkAbABzAHAAaQBuACAAVABvAHkAcwAiACwAIgB1AHIAbAAiADoAIgBoAHQAdABwADoALwAvAG0AcwBhAHoAdQByAGUAYwBsAG8AdQBkAHMAZQByAHYAaQBjAGUALgBjAGwAbwB1AGQAYQBwAHAALgBuAGUAdAA6ADgAOQAvAGgAbwBtAGUALwBzAGgAbwB3AD8AcwBrAHUAPQBtAG8AZABuAHcAdAAiACwAIgBkAHUAcgBhAHQAaQBvAG4AIgA6ACIAMAAwADoAMAAwADoAMAAxAC4AMgAxADkAIgAsACIAcABlAHIAZgBUAG8AdABhAGwAIgA6ACIAMAAwADoAMAAwADoAMAAxAC4AMgAxADkAIgAsACIAbgBlAHQAdwBvAHIAawBDAG8AbgBuAGUAYwB0ACIAOgAiADAAMAA6ADAAMAA6ADAAMAAuADAAMAA2ACIALAAiAHMAZQBuAHQAUgBlAHEAdQBlAHMAdAAiADoAIgAwADAAOgAwADAAOgAwADAALgAwADAAMwAiACwAIgByAGUAYwBlAGkAdgBlAGQAUgBlAHMAcABvAG4AcwBlACIAOgAiADAAMAA6ADAAMAA6ADAAMAAuADAAMAAyACIALAAiAGQAbwBtAFAAcgBvAGMAZQBzAHMAaQBuAGcAIgA6ACIAMAAwADoAMAAwADoAMAAwAC4ANAA2ADEAIgB9AH0AfQBdAA==</StringHttpBody>
+    </Request>
+    <Request Method="POST" Guid="400b53a0-9141-473c-b45c-671261d4b4dd" Version="1.1" Url="http://msazurecloudservice.cloudapp.net:89/Cart/AddItem" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="http://msazurecloudservice.cloudapp.net:89/Cart/Show" ReportingName="" IgnoreHttpStatusCode="False">
+      <DependentRequests>
+        <Request Method="GET" Guid="19adbb7d-464a-4e81-8518-98a7732139f2" Version="1.1" Url="http://msazurecloudservice.cloudapp.net:89/Cart/favicon.ico" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="http://msazurecloudservice.cloudapp.net:89/Errors.html?aspxerrorpath=/Cart/favicon.ico" ReportingName="" IgnoreHttpStatusCode="False" />
+      </DependentRequests>
+      <Headers>
+        <Header Name="Referer" Value="http://msazurecloudservice.cloudapp.net:89/home/show?sku=modnwt" />
+      </Headers>
+      <FormPostHttpBody>
+        <FormPostParameter Name="sku" Value="{{$HIDDEN1.sku}}" RecordedValue="modnwt" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="POST" Guid="1beaa886-8d60-44b4-bcc3-2fbd23e61015" Version="1.1" Url="http://dc.services.visualstudio.com/v2/track" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://msazurecloudservice.cloudapp.net:89/Cart/Show" />
+      </Headers>
+      <StringHttpBody ContentType="application/json" InsertByteOrderMark="False">WwB7ACIAdABpAG0AZQAiADoAIgAyADAAMQA1AC0AMQAyAC0AMAAyAFQAMAA2ADoAMQAzADoAMgA2AC4AMAAwADcAWgAiACwAIgBpAEsAZQB5ACIAOgAiADIAZgBkAGIAOAAwADQAYQAtADkAOQA1ADIALQA0ADMAMQAxAC0AYgBhAGEANAAtAGQAZQAxAGQAZQA5ADgAYgA2AGQAZgAzACIALAAiAG4AYQBtAGUAIgA6ACIATQBpAGMAcgBvAHMAbwBmAHQALgBBAHAAcABsAGkAYwBhAHQAaQBvAG4ASQBuAHMAaQBnAGgAdABzAC4AUABhAGcAZQB2AGkAZQB3ACIALAAiAHQAYQBnAHMAIgA6AHsAIgBhAGkALgBzAGUAcwBzAGkAbwBuAC4AaQBkACIAOgAiADYAMAA2ADAANABDAEUAOQAtADgARgBFADAALQA0ADEAMgA4AC0AQgBDADcAMwAtADkARABEADkARABDADAAQwBFAEMAMgA4ACIALAAiAGEAaQAuAGQAZQB2AGkAYwBlAC4AaQBkACIAOgAiAGIAcgBvAHcAcwBlAHIAIgAsACIAYQBpAC4AZABlAHYAaQBjAGUALgBsAG8AYwBhAGwAZQAiADoAIgBlAG4ALQBVAFMAIgAsACIAYQBpAC4AZABlAHYAaQBjAGUALgBzAGMAcgBlAGUAbgBSAGUAcwBvAGwAdQB0AGkAbwBuACIAOgAiADEANgA3ADAAWAA5ADMAOQAiACwAIgBhAGkALgBkAGUAdgBpAGMAZQAuAHQAeQBwAGUAIgA6ACIAYgByAG8AdwBzAGUAcgAiACwAIgBhAGkALgBpAG4AdABlAHIAbgBhAGwALgBzAGQAawBWAGUAcgBzAGkAbwBuACIAOgAiAEoAYQB2AGEAUwBjAHIAaQBwAHQAOgAwAC4AMQA5AC4AMQAiACwAIgBhAGkALgB1AHMAZQByAC4AaQBkACIAOgAiADQAMwA4AEMARQA2ADAARQAtADYANwAyADgALQA0ADUANgA4AC0AOABDAEUAMwAtAEIAMAA2ADIANAAwADIARgA5AEUANwAzACIALAAiAGEAaQAuAG8AcABlAHIAYQB0AGkAbwBuAC4AaQBkACIAOgAiADMAQwBEADUAQQBCAEYANQAtADMANwBFADYALQA0ADUANgBFAC0AQgBCAEMANwAtADUANwA1ADAARAA1ADIANABEAEIANQAwACIALAAiAGEAaQAuAG8AcABlAHIAYQB0AGkAbwBuAC4AbgBhAG0AZQAiADoAIgAvAEMAYQByAHQALwBTAGgAbwB3ACIAfQAsACIAZABhAHQAYQAiADoAewAiAGIAYQBzAGUAVAB5AHAAZQAiADoAIgBQAGEAZwBlAHYAaQBlAHcARABhAHQAYQAiACwAIgBiAGEAcwBlAEQAYQB0AGEAIgA6AHsAIgB2AGUAcgAiADoAMgAsACIAbgBhAG0AZQAiADoAIgBIAG8AbQBlACAALQAgAFQAYQBpAGwAcwBwAGkAbgAgAFQAbwB5AHMAIgAsACIAdQByAGwAIgA6ACIAaAB0AHQAcAA6AC8ALwBtAHMAYQB6AHUAcgBlAGMAbABvAHUAZABzAGUAcgB2AGkAYwBlAC4AYwBsAG8AdQBkAGEAcABwAC4AbgBlAHQAOgA4ADkALwBDAGEAcgB0AC8AUwBoAG8AdwAiACwAIgBkAHUAcgBhAHQAaQBvAG4AIgA6ACIAMAAwADoAMAAwADoAMAAxAC4ANwAyADAAIgB9AH0AfQAsAHsAIgB0AGkAbQBlACIAOgAiADIAMAAxADUALQAxADIALQAwADIAVAAwADYAOgAxADMAOgAyADYALgAwADEANABaACIALAAiAGkASwBlAHkAIgA6ACIAMgBmAGQAYgA4ADAANABhAC0AOQA5ADUAMgAtADQAMwAxADEALQBiAGEAYQA0AC0AZABlADEAZABlADkAOABiADYAZABmADMAIgAsACIAbgBhAG0AZQAiADoAIgBNAGkAYwByAG8AcwBvAGYAdAAuAEEAcABwAGwAaQBjAGEAdABpAG8AbgBJAG4AcwBpAGcAaAB0AHMALgBQAGEAZwBlAHYAaQBlAHcAUABlAHIAZgBvAHIAbQBhAG4AYwBlACIALAAiAHQAYQBnAHMAIgA6AHsAIgBhAGkALgBzAGUAcwBzAGkAbwBuAC4AaQBkACIAOgAiADYAMAA2ADAANABDAEUAOQAtADgARgBFADAALQA0ADEAMgA4AC0AQgBDADcAMwAtADkARABEADkARABDADAAQwBFAEMAMgA4ACIALAAiAGEAaQAuAGQAZQB2AGkAYwBlAC4AaQBkACIAOgAiAGIAcgBvAHcAcwBlAHIAIgAsACIAYQBpAC4AZABlAHYAaQBjAGUALgBsAG8AYwBhAGwAZQAiADoAIgBlAG4ALQBVAFMAIgAsACIAYQBpAC4AZABlAHYAaQBjAGUALgBzAGMAcgBlAGUAbgBSAGUAcwBvAGwAdQB0AGkAbwBuACIAOgAiADEANgA3ADAAWAA5ADMAOQAiACwAIgBhAGkALgBkAGUAdgBpAGMAZQAuAHQAeQBwAGUAIgA6ACIAYgByAG8AdwBzAGUAcgAiACwAIgBhAGkALgBpAG4AdABlAHIAbgBhAGwALgBzAGQAawBWAGUAcgBzAGkAbwBuACIAOgAiAEoAYQB2AGEAUwBjAHIAaQBwAHQAOgAwAC4AMQA5AC4AMQAiACwAIgBhAGkALgB1AHMAZQByAC4AaQBkACIAOgAiADQAMwA4AEMARQA2ADAARQAtADYANwAyADgALQA0ADUANgA4AC0AOABDAEUAMwAtAEIAMAA2ADIANAAwADIARgA5AEUANwAzACIALAAiAGEAaQAuAG8AcABlAHIAYQB0AGkAbwBuAC4AaQBkACIAOgAiADMAQwBEADUAQQBCAEYANQAtADMANwBFADYALQA0ADUANgBFAC0AQgBCAEMANwAtADUANwA1ADAARAA1ADIANABEAEIANQAwACIALAAiAGEAaQAuAG8AcABlAHIAYQB0AGkAbwBuAC4AbgBhAG0AZQAiADoAIgAvAEMAYQByAHQALwBTAGgAbwB3ACIAfQAsACIAZABhAHQAYQAiADoAewAiAGIAYQBzAGUAVAB5AHAAZQAiADoAIgBQAGEAZwBlAHYAaQBlAHcAUABlAHIAZgBvAHIAbQBhAG4AYwBlAEQAYQB0AGEAIgAsACIAYgBhAHMAZQBEAGEAdABhACIAOgB7ACIAdgBlAHIAIgA6ADIALAAiAG4AYQBtAGUAIgA6ACIASABvAG0AZQAgAC0AIABUAGEAaQBsAHMAcABpAG4AIABUAG8AeQBzACIALAAiAHUAcgBsACIAOgAiAGgAdAB0AHAAOgAvAC8AbQBzAGEAegB1AHIAZQBjAGwAbwB1AGQAcwBlAHIAdgBpAGMAZQAuAGMAbABvAHUAZABhAHAAcAAuAG4AZQB0ADoAOAA5AC8AQwBhAHIAdAAvAFMAaABvAHcAIgAsACIAZAB1AHIAYQB0AGkAbwBuACIAOgAiADAAMAA6ADAAMAA6ADAAMQAuADcAMgAwACIALAAiAHAAZQByAGYAVABvAHQAYQBsACIAOgAiADAAMAA6ADAAMAA6ADAAMQAuADcAMgAwACIALAAiAG4AZQB0AHcAbwByAGsAQwBvAG4AbgBlAGMAdAAiADoAIgAwADAAOgAwADAAOgAwADAALgA5ADQAMQAiACwAIgBzAGUAbgB0AFIAZQBxAHUAZQBzAHQAIgA6ACIAMAAwADoAMAAwADoAMAAwAC4ANAA3ADgAIgAsACIAcgBlAGMAZQBpAHYAZQBkAFIAZQBzAHAAbwBuAHMAZQAiADoAIgAwADAAOgAwADAAOgAwADAALgAwADAAMgAiACwAIgBkAG8AbQBQAHIAbwBjAGUAcwBzAGkAbgBnACIAOgAiADAAMAA6ADAAMAA6ADAAMAAuADIAOQA4ACIAfQB9AH0AXQA=</StringHttpBody>
+    </Request>
+    <Request Method="POST" Guid="c59936ca-8576-4b02-99b9-e0be03412cd0" Version="1.1" Url="http://msazurecloudservice.cloudapp.net:89/Order/Checkout" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://msazurecloudservice.cloudapp.net:89/Cart/Show" />
+      </Headers>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="GET" Guid="c2657fd6-bf8c-4909-9aa8-1034d31ea622" Version="1.1" Url="http://msazurecloudservice.cloudapp.net:89/Order/favicon.ico" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="http://msazurecloudservice.cloudapp.net:89/Errors.html?aspxerrorpath=/Order/favicon.ico" ReportingName="" IgnoreHttpStatusCode="False" />
+    <Request Method="POST" Guid="4fa833a1-6716-409d-8fbe-8180b29ffaaf" Version="1.1" Url="http://dc.services.visualstudio.com/v2/track" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://msazurecloudservice.cloudapp.net:89/Order/Checkout" />
+      </Headers>
+      <StringHttpBody ContentType="application/json" InsertByteOrderMark="False">WwB7ACIAdABpAG0AZQAiADoAIgAyADAAMQA1AC0AMQAyAC0AMAAyAFQAMAA2ADoAMQAzADoAMwA0AC4ANQAxADgAWgAiACwAIgBpAEsAZQB5ACIAOgAiADIAZgBkAGIAOAAwADQAYQAtADkAOQA1ADIALQA0ADMAMQAxAC0AYgBhAGEANAAtAGQAZQAxAGQAZQA5ADgAYgA2AGQAZgAzACIALAAiAG4AYQBtAGUAIgA6ACIATQBpAGMAcgBvAHMAbwBmAHQALgBBAHAAcABsAGkAYwBhAHQAaQBvAG4ASQBuAHMAaQBnAGgAdABzAC4AUABhAGcAZQB2AGkAZQB3ACIALAAiAHQAYQBnAHMAIgA6AHsAIgBhAGkALgBzAGUAcwBzAGkAbwBuAC4AaQBkACIAOgAiADYAMAA2ADAANABDAEUAOQAtADgARgBFADAALQA0ADEAMgA4AC0AQgBDADcAMwAtADkARABEADkARABDADAAQwBFAEMAMgA4ACIALAAiAGEAaQAuAGQAZQB2AGkAYwBlAC4AaQBkACIAOgAiAGIAcgBvAHcAcwBlAHIAIgAsACIAYQBpAC4AZABlAHYAaQBjAGUALgBsAG8AYwBhAGwAZQAiADoAIgBlAG4ALQBVAFMAIgAsACIAYQBpAC4AZABlAHYAaQBjAGUALgBzAGMAcgBlAGUAbgBSAGUAcwBvAGwAdQB0AGkAbwBuACIAOgAiADEANgA3ADAAWAA5ADMAOQAiACwAIgBhAGkALgBkAGUAdgBpAGMAZQAuAHQAeQBwAGUAIgA6ACIAYgByAG8AdwBzAGUAcgAiACwAIgBhAGkALgBpAG4AdABlAHIAbgBhAGwALgBzAGQAawBWAGUAcgBzAGkAbwBuACIAOgAiAEoAYQB2AGEAUwBjAHIAaQBwAHQAOgAwAC4AMQA5AC4AMQAiACwAIgBhAGkALgB1AHMAZQByAC4AaQBkACIAOgAiADQAMwA4AEMARQA2ADAARQAtADYANwAyADgALQA0ADUANgA4AC0AOABDAEUAMwAtAEIAMAA2ADIANAAwADIARgA5AEUANwAzACIALAAiAGEAaQAuAG8AcABlAHIAYQB0AGkAbwBuAC4AaQBkACIAOgAiAEUAMAA2ADQAQQAxADcARQAtAEQAMgAyADkALQA0ADkANgA1AC0AOQBDAEEANQAtADUANAA4ADEAOQAzADQAQgA3ADYAOQBGACIALAAiAGEAaQAuAG8AcABlAHIAYQB0AGkAbwBuAC4AbgBhAG0AZQAiADoAIgAvAE8AcgBkAGUAcgAvAEMAaABlAGMAawBvAHUAdAAiAH0ALAAiAGQAYQB0AGEAIgA6AHsAIgBiAGEAcwBlAFQAeQBwAGUAIgA6ACIAUABhAGcAZQB2AGkAZQB3AEQAYQB0AGEAIgAsACIAYgBhAHMAZQBEAGEAdABhACIAOgB7ACIAdgBlAHIAIgA6ADIALAAiAG4AYQBtAGUAIgA6ACIASABvAG0AZQAgAC0AIABUAGEAaQBsAHMAcABpAG4AIABUAG8AeQBzACIALAAiAHUAcgBsACIAOgAiAGgAdAB0AHAAOgAvAC8AbQBzAGEAegB1AHIAZQBjAGwAbwB1AGQAcwBlAHIAdgBpAGMAZQAuAGMAbABvAHUAZABhAHAAcAAuAG4AZQB0ADoAOAA5AC8ATwByAGQAZQByAC8AQwBoAGUAYwBrAG8AdQB0ACIALAAiAGQAdQByAGEAdABpAG8AbgAiADoAIgAwADAAOgAwADAAOgAwADcALgAxADEANwAiAH0AfQB9ACwAewAiAHQAaQBtAGUAIgA6ACIAMgAwADEANQAtADEAMgAtADAAMgBUADAANgA6ADEAMwA6ADMANAAuADUAMgAzAFoAIgAsACIAaQBLAGUAeQAiADoAIgAyAGYAZABiADgAMAA0AGEALQA5ADkANQAyAC0ANAAzADEAMQAtAGIAYQBhADQALQBkAGUAMQBkAGUAOQA4AGIANgBkAGYAMwAiACwAIgBuAGEAbQBlACIAOgAiAE0AaQBjAHIAbwBzAG8AZgB0AC4AQQBwAHAAbABpAGMAYQB0AGkAbwBuAEkAbgBzAGkAZwBoAHQAcwAuAFAAYQBnAGUAdgBpAGUAdwBQAGUAcgBmAG8AcgBtAGEAbgBjAGUAIgAsACIAdABhAGcAcwAiADoAewAiAGEAaQAuAHMAZQBzAHMAaQBvAG4ALgBpAGQAIgA6ACIANgAwADYAMAA0AEMARQA5AC0AOABGAEUAMAAtADQAMQAyADgALQBCAEMANwAzAC0AOQBEAEQAOQBEAEMAMABDAEUAQwAyADgAIgAsACIAYQBpAC4AZABlAHYAaQBjAGUALgBpAGQAIgA6ACIAYgByAG8AdwBzAGUAcgAiACwAIgBhAGkALgBkAGUAdgBpAGMAZQAuAGwAbwBjAGEAbABlACIAOgAiAGUAbgAtAFUAUwAiACwAIgBhAGkALgBkAGUAdgBpAGMAZQAuAHMAYwByAGUAZQBuAFIAZQBzAG8AbAB1AHQAaQBvAG4AIgA6ACIAMQA2ADcAMABYADkAMwA5ACIALAAiAGEAaQAuAGQAZQB2AGkAYwBlAC4AdAB5AHAAZQAiADoAIgBiAHIAbwB3AHMAZQByACIALAAiAGEAaQAuAGkAbgB0AGUAcgBuAGEAbAAuAHMAZABrAFYAZQByAHMAaQBvAG4AIgA6ACIASgBhAHYAYQBTAGMAcgBpAHAAdAA6ADAALgAxADkALgAxACIALAAiAGEAaQAuAHUAcwBlAHIALgBpAGQAIgA6ACIANAAzADgAQwBFADYAMABFAC0ANgA3ADIAOAAtADQANQA2ADgALQA4AEMARQAzAC0AQgAwADYAMgA0ADAAMgBGADkARQA3ADMAIgAsACIAYQBpAC4AbwBwAGUAcgBhAHQAaQBvAG4ALgBpAGQAIgA6ACIARQAwADYANABBADEANwBFAC0ARAAyADIAOQAtADQAOQA2ADUALQA5AEMAQQA1AC0ANQA0ADgAMQA5ADMANABCADcANgA5AEYAIgAsACIAYQBpAC4AbwBwAGUAcgBhAHQAaQBvAG4ALgBuAGEAbQBlACIAOgAiAC8ATwByAGQAZQByAC8AQwBoAGUAYwBrAG8AdQB0ACIAfQAsACIAZABhAHQAYQAiADoAewAiAGIAYQBzAGUAVAB5AHAAZQAiADoAIgBQAGEAZwBlAHYAaQBlAHcAUABlAHIAZgBvAHIAbQBhAG4AYwBlAEQAYQB0AGEAIgAsACIAYgBhAHMAZQBEAGEAdABhACIAOgB7ACIAdgBlAHIAIgA6ADIALAAiAG4AYQBtAGUAIgA6ACIASABvAG0AZQAgAC0AIABUAGEAaQBsAHMAcABpAG4AIABUAG8AeQBzACIALAAiAHUAcgBsACIAOgAiAGgAdAB0AHAAOgAvAC8AbQBzAGEAegB1AHIAZQBjAGwAbwB1AGQAcwBlAHIAdgBpAGMAZQAuAGMAbABvAHUAZABhAHAAcAAuAG4AZQB0ADoAOAA5AC8ATwByAGQAZQByAC8AQwBoAGUAYwBrAG8AdQB0ACIALAAiAGQAdQByAGEAdABpAG8AbgAiADoAIgAwADAAOgAwADAAOgAwADcALgAxADEANwAiACwAIgBwAGUAcgBmAFQAbwB0AGEAbAAiADoAIgAwADAAOgAwADAAOgAwADcALgAxADEANwAiACwAIgBuAGUAdAB3AG8AcgBrAEMAbwBuAG4AZQBjAHQAIgA6ACIAMAAwADoAMAAwADoAMAAwAC4AMAAwADYAIgAsACIAcwBlAG4AdABSAGUAcQB1AGUAcwB0ACIAOgAiADAAMAA6ADAAMAA6ADAANgAuADYANAA4ACIALAAiAHIAZQBjAGUAaQB2AGUAZABSAGUAcwBwAG8AbgBzAGUAIgA6ACIAMAAwADoAMAAwADoAMAAwAC4AMAAwADIAIgAsACIAZABvAG0AUAByAG8AYwBlAHMAcwBpAG4AZwAiADoAIgAwADAAOgAwADAAOgAwADAALgA0ADUANwAiAH0AfQB9AF0A</StringHttpBody>
+    </Request>
+  </Items>
+  <ValidationRules>
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidateResponseUrl, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response URL" Description="Validates that the response URL after redirects are followed is the same as the recorded response URL.  QueryString parameters are ignored." Level="Low" ExectuionOrder="BeforeDependents" />
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleResponseTimeGoal, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response Time Goal" Description="Validates that the response time for the request is less than or equal to the response time goal as specified on the request.  Response time goals of zero will be ignored." Level="Low" ExectuionOrder="AfterDependents">
+      <RuleParameters>
+        <RuleParameter Name="Tolerance" Value="0" />
+      </RuleParameters>
+    </ValidationRule>
+  </ValidationRules>
+</WebTest>

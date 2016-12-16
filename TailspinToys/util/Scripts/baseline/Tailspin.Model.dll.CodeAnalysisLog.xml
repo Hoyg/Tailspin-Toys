@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files\microsoft visual studio 10.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="10.0">
+ <Targets>
+  <Target Name="C:\Builds\1\Tailspin Toys\Tailspin Toys - Iteration 2\Binaries\Tailspin.Model.dll">
+   <Modules>
+    <Module Name="tailspin.model.dll">
+     <Messages>
+      <Message TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824" Status="Active" Created="2010-03-11 00:33:10Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="Warning">Because assembly 'Tailspin.Model.dll' contains a ResX-based resource file, mark it with the NeutralResourcesLanguage attribute, specifying the language of the resources within the assembly. This could improve lookup performance the first time a resource is retrieved.</Issue>
+      </Message>
+     </Messages>
+     <Namespaces>
+      <Namespace Name="Tailspin.Model">
+       <Types>
+        <Type Name="Order" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ValidationErrors" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2010-03-11 00:33:10Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning">Change 'Order.ValidationErrors' to be read-only by removing the property setter.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Product" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(System.String,System.String,System.String,System.Boolean,System.Decimal,System.Int32,System.DateTime,System.Boolean,System.Boolean)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2010-03-11 00:33:10Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="c:\Builds\1\Tailspin Toys\Tailspin Toys - Iteration 2\Sources\Development\Iteration 2\Tailspin.Model\Product" File="Product.cs" Line="66">'Product.Product(string, string, string, bool, decimal, int, DateTime, bool, bool)' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;Product..ctor(String, String, String, Boolean, Decimal, Int32, DateTime, Boolean, Boolean)&#xD;&#xA;Product.OnCreated():Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="c:\Builds\1\Tailspin Toys\Tailspin Toys - Iteration 2\Sources\Development\Iteration 2\Tailspin.Model\Product" File="Product.cs" Line="66">'Product.Product(string, string, string, bool, decimal, int, DateTime, bool, bool)' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;Product..ctor(String, String, String, Boolean, Decimal, Int32, DateTime, Boolean, Boolean)&#xD;&#xA;Product.set_AllowBackOrder(Boolean):Void&#xD;&#xA;Product.OnInventoryFlagsChanged():Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="c:\Builds\1\Tailspin Toys\Tailspin Toys - Iteration 2\Sources\Development\Iteration 2\Tailspin.Model\Product" File="Product.cs" Line="66">'Product.Product(string, string, string, bool, decimal, int, DateTime, bool, bool)' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;Product..ctor(String, String, String, Boolean, Decimal, Int32, DateTime, Boolean, Boolean)&#xD;&#xA;Product.set_AmountOnHand(Int32):Void&#xD;&#xA;Product.OnInventoryChanged():Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="c:\Builds\1\Tailspin Toys\Tailspin Toys - Iteration 2\Sources\Development\Iteration 2\Tailspin.Model\Product" File="Product.cs" Line="66">'Product.Product(string, string, string, bool, decimal, int, DateTime, bool, bool)' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;Product..ctor(String, String, String, Boolean, Decimal, Int32, DateTime, Boolean, Boolean)&#xD;&#xA;Product.set_CurrentInventory(InventoryState):Void&#xD;&#xA;Product.OnInventoryStatusChanged():Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CrossSells" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2010-03-11 00:33:10Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning">Change 'Product.CrossSells' to be read-only by removing the property setter.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Descriptors" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2010-03-11 00:33:10Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning">Change 'Product.Descriptors' to be read-only by removing the property setter.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Images" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2010-03-11 00:33:10Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning">Change 'Product.Images' to be read-only by removing the property setter.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Recommended" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2010-03-11 00:33:10Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning">Change 'Product.Recommended' to be read-only by removing the property setter.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#RelatedProducts" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2010-03-11 00:33:10Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning">Change 'Product.RelatedProducts' to be read-only by removing the property setter.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ProductCategory" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CrossSells" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2010-03-11 00:33:10Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning">Change 'ProductCategory.CrossSells' to be read-only by removing the property setter.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Descriptors" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2010-03-11 00:33:10Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning">Change 'ProductCategory.Descriptors' to be read-only by removing the property setter.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Products" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2010-03-11 00:33:10Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning">Change 'ProductCategory.Products' to be read-only by removing the property setter.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#RelatedProducts" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2010-03-11 00:33:10Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning">Change 'ProductCategory.RelatedProducts' to be read-only by removing the property setter.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ProductList" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Products" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2010-03-11 00:33:10Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning">Change 'ProductList.Products' to be read-only by removing the property setter.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Shipment" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Items" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2010-03-11 00:33:10Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning">Change 'Shipment.Items' to be read-only by removing the property setter.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ShippingOptions" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2010-03-11 00:33:10Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning">Change 'Shipment.ShippingOptions' to be read-only by removing the property setter.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ShoppingCart" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Items" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2010-03-11 00:33:10Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning">Change 'ShoppingCart.Items' to be read-only by removing the property setter.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Transaction" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#TransactionErrors" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2010-03-11 00:33:10Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning">Change 'Transaction.TransactionErrors' to be read-only by removing the property setter.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UserBehavior" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="EnumsShouldHaveZeroValue" Category="Microsoft.Design" CheckId="CA1008" Status="Active" Created="2010-03-11 00:33:10Z" FixCategory="NonBreaking">
+           <Issue Name="NotFlagsNoZeroValue" Certainty="95" Level="CriticalError">Add a member to 'UserBehavior' that has a value of zero with a suggested name of 'None'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227">
+   <Name>Collection properties should be read only</Name>
+   <Description>Properties that return collections should be read-only so that users cannot entirely replace the backing store. Users can still modify the contents of the collection by calling relevant methods on the collection. Note that the XmlSerializer class has special support for deserializing read-only collections. See the XmlSerializer overview for more information.</Description>
+   <Resolution Name="Default">Change {0} to be read-only by removing the property setter.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182327(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214">
+   <Name>Do not call overridable methods in constructors</Name>
+   <Description>Virtual methods defined on the class should not be called from constructors. If a derived class has overridden the method, the derived class version will be called (before the derived class constructor is called).</Description>
+   <Resolution Name="Default">{0} contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: {1}</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182331(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalWarning</MessageLevel>
+   <File Name="usagerules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="EnumsShouldHaveZeroValue" Category="Microsoft.Design" CheckId="CA1008">
+   <Name>Enums should have zero value</Name>
+   <Description>An enum should generally have a zero value. If the enum is not decorated with the Flags attribute, it should have a member with a value of zero that represents the empty state. Optionally, this value is named 'None'. For a Flags-attributed enum, a zero-valued member is optional and, if it exists, should always be named 'None'. This value should indicate that no values have been set in the enum. Using a zero-valued member for other purposes is contrary to the use of the Flags attribute in that the bitwise AND and OR operators are useless with the member.</Description>
+   <Resolution Name="NotFlagsNoZeroValue">Add a member to {0} that has a value of zero with a suggested name of 'None'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182149(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824">
+   <Name>Mark assemblies with NeutralResourcesLanguageAttribute</Name>
+   <Description>The NeutralResourcesLanguage attribute informs the ResourceManager of the language used to render the neutral culture's resources for an assembly. When looking up resources in the same culture as the neutral resources language, the ResourceManager automatically uses the resources located in the main assembly, instead of searching for a satellite assembly with the current user interface culture for the current thread. This will improve lookup performance for the first resource you load and can reduce your working set.</Description>
+   <Resolution Name="Default">Because assembly {0} contains a ResX-based resource file, mark it with the NeutralResourcesLanguage attribute, specifying the language of the resources within the assembly. This could improve lookup performance the first time a resource is retrieved.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb385967(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="10.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

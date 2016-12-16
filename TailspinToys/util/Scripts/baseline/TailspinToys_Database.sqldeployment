@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DeploymentConfigurationSettings xmlns="urn:Microsoft.VisualStudio.Data.Schema.Package.DeploymentConfigurationSettings">
+  <Version>1.0</Version>
+  <Properties>
+    <AlwaysCreateNewDatabase>True</AlwaysCreateNewDatabase>
+    <DeployDatabaseProperties>True</DeployDatabaseProperties>
+    <DeploymentCollationPreference>UseTargetModelCollation</DeploymentCollationPreference>
+    <GenerateDropsIfNotInProject>True</GenerateDropsIfNotInProject>
+  </Properties>
+</DeploymentConfigurationSettings>

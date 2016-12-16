@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\inetpub\Tailspin</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="About.aspx">
+      <publishTime>07/09/2013 10:24:46</publishTime>
+    </File>
+    <File Include="Address.aspx">
+      <publishTime>07/09/2013 10:24:46</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>07/09/2013 12:03:18</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.AspNet.dll">
+      <publishTime>07/09/2013 11:51:22</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.Core.dll">
+      <publishTime>07/09/2013 11:51:10</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.OAuth.Consumer.dll">
+      <publishTime>07/09/2013 11:51:20</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.OAuth.dll">
+      <publishTime>07/09/2013 11:51:18</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.OpenId.dll">
+      <publishTime>07/09/2013 11:51:14</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.OpenId.RelyingParty.dll">
+      <publishTime>07/09/2013 11:51:16</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/09/2013 11:06:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Mvc.FixedDisplayModes.dll">
+      <publishTime>07/09/2013 11:51:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.WebPages.OAuth.dll">
+      <publishTime>07/09/2013 11:51:38</publishTime>
+    </File>
+    <File Include="bin/Mono.Math.dll">
+      <publishTime>07/09/2013 11:51:14</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>07/09/2013 11:51:32</publishTime>
+    </File>
+    <File Include="bin/Org.Mentalis.Security.Cryptography.dll">
+      <publishTime>07/09/2013 11:51:14</publishTime>
+    </File>
+    <File Include="bin/StructureMap.dll">
+      <publishTime>07/09/2013 10:24:40</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Extensions.dll">
+      <publishTime>07/09/2013 11:51:02</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Primitives.dll">
+      <publishTime>07/09/2013 11:51:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>07/09/2013 11:06:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>07/09/2013 11:51:28</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>07/09/2013 11:51:36</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>07/09/2013 11:06:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>07/09/2013 11:06:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>07/09/2013 11:06:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>07/09/2013 11:06:32</publishTime>
+    </File>
+    <File Include="bin/Tailspin.Infrastructure.dll">
+      <publishTime>07/09/2013 10:17:01</publishTime>
+    </File>
+    <File Include="bin/Tailspin.Model.dll">
+      <publishTime>07/09/2013 10:17:02</publishTime>
+    </File>
+    <File Include="bin/Tailspin.SimpleSqlRepository.dll">
+      <publishTime>07/09/2013 10:17:03</publishTime>
+    </File>
+    <File Include="bin/Tailspin.WebUpgraded.dll">
+      <publishTime>07/09/2013 10:17:05</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>07/09/2013 11:51:36</publishTime>
+    </File>
+    <File Include="bin/WebMatrix.Data.dll">
+      <publishTime>07/09/2013 11:06:34</publishTime>
+    </File>
+    <File Include="bin/WebMatrix.WebData.dll">
+      <publishTime>07/09/2013 11:06:34</publishTime>
+    </File>
+    <File Include="Cart.aspx">
+      <publishTime>07/09/2013 10:24:46</publishTime>
+    </File>
+    <File Include="Content/XML/Ads.xml">
+      <publishTime>07/09/2013 10:24:46</publishTime>
+    </File>
+    <File Include="CSS/cms.css">
+      <publishTime>07/09/2013 10:24:46</publishTime>
+    </File>
+    <File Include="CSS/forms.css">
+      <publishTime>07/09/2013 10:24:46</publishTime>
+    </File>
+    <File Include="CSS/grid.css">
+      <publishTime>07/09/2013 10:24:46</publishTime>
+    </File>
+    <File Include="CSS/grid.png">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="CSS/ieStyles.css">
+      <publishTime>07/09/2013 10:24:46</publishTime>
+    </File>
+    <File Include="CSS/lightbox.css">
+      <publishTime>07/09/2013 10:24:46</publishTime>
+    </File>
+    <File Include="CSS/popupStyles.css">
+      <publishTime>07/09/2013 10:24:46</publishTime>
+    </File>
+    <File Include="CSS/popupSystem.css">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="CSS/print.css">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="CSS/reset.css">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="CSS/structure.css">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="CSS/styles.css">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="CSS/Thumbs.db">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="CSS/typography.css">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="CSS/widgets.css">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>07/09/2013 10:24:46</publishTime>
+    </File>
+    <File Include="Detail.aspx">
+      <publishTime>07/09/2013 10:24:46</publishTime>
+    </File>
+    <File Include="Errors.html">
+      <publishTime>07/09/2013 11:12:32</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>07/09/2013 10:24:46</publishTime>
+    </File>
+    <File Include="Finalize.aspx">
+      <publishTime>07/09/2013 10:24:46</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>07/09/2013 10:24:46</publishTime>
+    </File>
+    <File Include="Home.aspx">
+      <publishTime>07/09/2013 10:24:46</publishTime>
+    </File>
+    <File Include="Images/background-main.jpg">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="Images/background-tile-right.png">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="Images/btn-add-cart.png">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="Images/btn-checkout-large.png">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="Images/btn-checkout.png">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="Images/btn-go.png">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="Images/btn-model.png">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="Images/btn-paper.png">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="Images/btn-remove.png">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="Images/btn-view-plane.png">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="Images/coupon-code-background.png">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="Images/logo-corner.png">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="Images/logo.png">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="Images/plane-home.png">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="Images/product-categories.png">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="Images/product-category-background.png">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="Images/product-detail-btm.png">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="Images/product-detail-top.png">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="Images/product-listing-background-btm.png">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="Images/product-listing-background.png">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="Images/product-listing-btm.png">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="Images/product-listing-top.png">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="Images/related-products-btm.png">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="Images/related-products-tile.png">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="Images/related-products-top.png">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="Images/shopping-cart-background.png">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="Images/shopping-cart-icon.png">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="Images/shopping-cart-table-head.png">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="Images/Thumbs.db">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="Images/trans.png">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="Listing.aspx">
+      <publishTime>07/09/2013 10:24:46</publishTime>
+    </File>
+    <File Include="Motion/Tailspin.xap">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>07/09/2013 11:28:26</publishTime>
+    </File>
+    <File Include="ProductImages/cce-cart.jpg">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="ProductImages/cce-thumb.jpg">
+      <publishTime>07/09/2013 10:24:50</publishTime>
+    </File>
+    <File Include="ProductImages/fcf-cart.jpg">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="ProductImages/fcf-thumb.jpg">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="ProductImages/nwt-cart.jpg">
+      <publishTime>07/09/2013 10:24:50</publishTime>
+    </File>
+    <File Include="ProductImages/nwt-thumb.jpg">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="ProductImages/trr-cart.jpg">
+      <publishTime>07/09/2013 10:24:50</publishTime>
+    </File>
+    <File Include="ProductImages/trr-thumb.jpg">
+      <publishTime>07/09/2013 10:24:48</publishTime>
+    </File>
+    <File Include="ProductImages/wts-cart.jpg">
+      <publishTime>07/09/2013 10:24:50</publishTime>
+    </File>
+    <File Include="ProductImages/wts-thumb.jpg">
+      <publishTime>07/09/2013 10:24:50</publishTime>
+    </File>
+    <File Include="ProductImages/wwi-cart.jpg">
+      <publishTime>07/09/2013 10:24:50</publishTime>
+    </File>
+    <File Include="ProductImages/wwi-thumb.jpg">
+      <publishTime>07/09/2013 10:24:50</publishTime>
+    </File>
+    <File Include="Receipt.aspx">
+      <publishTime>07/09/2013 10:24:46</publishTime>
+    </File>
+    <File Include="Scripts/clear.gif">
+      <publishTime>07/09/2013 10:24:50</publishTime>
+    </File>
+    <File Include="Scripts/cufon-yui.js">
+      <publishTime>07/09/2013 10:24:50</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.3.2.min.js">
+      <publishTime>07/09/2013 10:24:50</publishTime>
+    </File>
+    <File Include="Scripts/lightbox+++.js">
+      <publishTime>07/09/2013 10:24:50</publishTime>
+    </File>
+    <File Include="Scripts/PopUpMenu.js">
+      <publishTime>07/09/2013 10:24:50</publishTime>
+    </File>
+    <File Include="Scripts/Silverlight.js">
+      <publishTime>07/09/2013 10:24:50</publishTime>
+    </File>
+    <File Include="Scripts/StateDropDown.js">
+      <publishTime>07/09/2013 10:24:50</publishTime>
+    </File>
+    <File Include="Scripts/Stencil_Std_700.font.js">
+      <publishTime>07/09/2013 10:24:50</publishTime>
+    </File>
+    <File Include="Scripts/unitpngfix.js">
+      <publishTime>07/09/2013 10:24:50</publishTime>
+    </File>
+    <File Include="Shared/AddressDisplay.ascx">
+      <publishTime>07/09/2013 10:24:50</publishTime>
+    </File>
+    <File Include="Shared/AddressEntry.ascx">
+      <publishTime>07/09/2013 10:24:50</publishTime>
+    </File>
+    <File Include="Shared/ComingSoon.ascx">
+      <publishTime>07/09/2013 10:24:50</publishTime>
+    </File>
+    <File Include="Shared/CreditCard.ascx">
+      <publishTime>07/09/2013 10:24:50</publishTime>
+    </File>
+    <File Include="Shared/Favorites.ascx">
+      <publishTime>07/09/2013 10:24:50</publishTime>
+    </File>
+    <File Include="Shared/FeaturedProduct.ascx">
+      <publishTime>07/09/2013 10:24:50</publishTime>
+    </File>
+    <File Include="Shared/Html.ascx">
+      <publishTime>07/09/2013 10:24:50</publishTime>
+    </File>
+    <File Include="Shared/Menu.ascx">
+      <publishTime>07/09/2013 10:24:50</publishTime>
+    </File>
+    <File Include="Shared/NewProducts.ascx">
+      <publishTime>07/09/2013 10:24:50</publishTime>
+    </File>
+    <File Include="Shared/ProductList.ascx">
+      <publishTime>07/09/2013 10:24:50</publishTime>
+    </File>
+    <File Include="Shared/Site.Master">
+      <publishTime>07/09/2013 11:09:32</publishTime>
+    </File>
+    <File Include="Template.Master">
+      <publishTime>07/09/2013 10:24:46</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/09/2013 10:17:05</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

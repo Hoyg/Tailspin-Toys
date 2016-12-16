@@ -1,0 +1,4660 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataSchemaModel FileFormatVersion="1.2" SchemaVersion="1.1" DspName="Microsoft.Data.Schema.Sql.Sql100DatabaseSchemaProvider" CollationLcid="1033" CollationCaseSensitive="False">
+	<Header>
+		<CustomData Category="ModelCapability">
+			<Metadata Name="ModelCapability" Value="Default" />
+		</CustomData>
+		<CustomData Category="ClrTypesDbSchema" Type="DbSchema">
+			<Metadata Name="ClrTypesDbSchema" Value="True" />
+		</CustomData>
+		<CustomData Category="AnsiNulls">
+			<Metadata Name="AnsiNulls" Value="True" />
+		</CustomData>
+		<CustomData Category="QuotedIdentifier">
+			<Metadata Name="QuotedIdentifier" Value="True" />
+		</CustomData>
+		<CustomData Category="CompatibilityMode">
+			<Metadata Name="CompatibilityMode" Value="100" />
+		</CustomData>
+	</Header>
+	<Model>
+		<Element Type="ISql100DatabaseOptions">
+			<Property Name="Collation" Value="Latin1_General_CI_AS" />
+			<Property Name="IsAnsiNullDefaultOn" Value="True" />
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Property Name="IsAnsiWarningsOn" Value="True" />
+			<Property Name="IsArithAbortOn" Value="True" />
+			<Property Name="IsConcatNullYieldsNullOn" Value="True" />
+			<Property Name="IsTornPageProtectionOn" Value="False" />
+			<Property Name="IsFullTextEnabled" Value="True" />
+			<Property Name="PageVerifyMode" Value="3" />
+			<Property Name="IsVardecimalStorageFormatOn" Value="False" />
+			<Relationship Name="DefaultFilegroup">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[PRIMARY]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Role" Name="[aspnet_Membership_BasicAccess]" Disambiguator="14">
+			<Relationship Name="Authorizer">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Schema" Name="[aspnet_Membership_BasicAccess]">
+			<Relationship Name="Authorizer">
+				<Entry>
+					<References Name="[aspnet_Membership_BasicAccess]" Disambiguator="14" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Role" Name="[aspnet_Membership_FullAccess]" Disambiguator="13">
+			<Relationship Name="Authorizer">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Schema" Name="[aspnet_Membership_FullAccess]">
+			<Relationship Name="Authorizer">
+				<Entry>
+					<References Name="[aspnet_Membership_FullAccess]" Disambiguator="13" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Role" Name="[aspnet_Membership_ReportingAccess]" Disambiguator="12">
+			<Relationship Name="Authorizer">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Schema" Name="[aspnet_Membership_ReportingAccess]">
+			<Relationship Name="Authorizer">
+				<Entry>
+					<References Name="[aspnet_Membership_ReportingAccess]" Disambiguator="12" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Role" Name="[aspnet_Personalization_BasicAccess]" Disambiguator="11">
+			<Relationship Name="Authorizer">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Schema" Name="[aspnet_Personalization_BasicAccess]">
+			<Relationship Name="Authorizer">
+				<Entry>
+					<References Name="[aspnet_Personalization_BasicAccess]" Disambiguator="11" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Role" Name="[aspnet_Personalization_FullAccess]" Disambiguator="10">
+			<Relationship Name="Authorizer">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Schema" Name="[aspnet_Personalization_FullAccess]">
+			<Relationship Name="Authorizer">
+				<Entry>
+					<References Name="[aspnet_Personalization_FullAccess]" Disambiguator="10" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Role" Name="[aspnet_Personalization_ReportingAccess]" Disambiguator="9">
+			<Relationship Name="Authorizer">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Schema" Name="[aspnet_Personalization_ReportingAccess]">
+			<Relationship Name="Authorizer">
+				<Entry>
+					<References Name="[aspnet_Personalization_ReportingAccess]" Disambiguator="9" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Role" Name="[aspnet_Profile_BasicAccess]" Disambiguator="8">
+			<Relationship Name="Authorizer">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Schema" Name="[aspnet_Profile_BasicAccess]">
+			<Relationship Name="Authorizer">
+				<Entry>
+					<References Name="[aspnet_Profile_BasicAccess]" Disambiguator="8" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Role" Name="[aspnet_Profile_FullAccess]" Disambiguator="7">
+			<Relationship Name="Authorizer">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Schema" Name="[aspnet_Profile_FullAccess]">
+			<Relationship Name="Authorizer">
+				<Entry>
+					<References Name="[aspnet_Profile_FullAccess]" Disambiguator="7" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Role" Name="[aspnet_Profile_ReportingAccess]" Disambiguator="6">
+			<Relationship Name="Authorizer">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Schema" Name="[aspnet_Profile_ReportingAccess]">
+			<Relationship Name="Authorizer">
+				<Entry>
+					<References Name="[aspnet_Profile_ReportingAccess]" Disambiguator="6" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Role" Name="[aspnet_Roles_BasicAccess]" Disambiguator="5">
+			<Relationship Name="Authorizer">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Schema" Name="[aspnet_Roles_BasicAccess]">
+			<Relationship Name="Authorizer">
+				<Entry>
+					<References Name="[aspnet_Roles_BasicAccess]" Disambiguator="5" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Role" Name="[aspnet_Roles_FullAccess]" Disambiguator="4">
+			<Relationship Name="Authorizer">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Schema" Name="[aspnet_Roles_FullAccess]">
+			<Relationship Name="Authorizer">
+				<Entry>
+					<References Name="[aspnet_Roles_FullAccess]" Disambiguator="4" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Role" Name="[aspnet_Roles_ReportingAccess]" Disambiguator="3">
+			<Relationship Name="Authorizer">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Schema" Name="[aspnet_Roles_ReportingAccess]">
+			<Relationship Name="Authorizer">
+				<Entry>
+					<References Name="[aspnet_Roles_ReportingAccess]" Disambiguator="3" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Role" Name="[aspnet_WebEvent_FullAccess]" Disambiguator="2">
+			<Relationship Name="Authorizer">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Schema" Name="[aspnet_WebEvent_FullAccess]">
+			<Relationship Name="Authorizer">
+				<Entry>
+					<References Name="[aspnet_WebEvent_FullAccess]" Disambiguator="2" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Route" Name="[AutoCreatedLocal]">
+			<Property Name="Address" Value="LOCAL" />
+			<Relationship Name="Authorizer">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[Addresses]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Addresses].[AddressID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Addresses].[UserName]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Addresses].[FirstName]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Addresses].[LastName]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Addresses].[Email]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Addresses].[Street1]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Addresses].[Street2]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Addresses].[City]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="150" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Addresses].[StateOrProvince]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Addresses].[Zip]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Addresses].[Country]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Addresses].[Latitude]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Addresses].[Longitude]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Addresses].[IsDefault]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bit]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[CartItems]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[CartItems].[SKU]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[CartItems].[UserName]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[CartItems].[Quantity]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[CartItems].[DateAdded]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[CartItems].[DiscountAmount]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Precision" Value="18" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[decimal]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[CartItems].[DiscountReason]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="255" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[Categories]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Categories].[Code]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="63" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Categories].[Title]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="255" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[Categories_Products]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Categories_Products].[CategoryCode]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="63" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Categories_Products].[SKU]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[CustomerBehaviors]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[CustomerBehaviors].[UserBehaviorID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[CustomerBehaviors].[Description]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[CustomerEvents]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[CustomerEvents].[EventID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[CustomerEvents].[UserBehaviorID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[CustomerEvents].[UserName]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[CustomerEvents].[EventDate]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[CustomerEvents].[IP]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[CustomerEvents].[SKU]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[CustomerEvents].[CategoryID]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[CustomerEvents].[OrderID]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[uniqueidentifier]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[Customers]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Customers].[UserName]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Customers].[Email]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Customers].[First]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Customers].[Last]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Customers].[LanguageCode]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="2" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[DeliveryMethod]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[DeliveryMethod].[DeliveryMethodID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[DeliveryMethod].[Description]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_Addresses_IsDefault]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[((1))]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Addresses]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[Addresses].[IsDefault]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_CartItems_DateAdded]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[(getdate())]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[CartItems]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[CartItems].[DateAdded]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_CartItems_DiscountAmount]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[((0))]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[CartItems]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[CartItems].[DiscountAmount]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_Customers_Last]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[(N'en')]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Customers]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[Customers].[Last]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_InventoryRecords_DateEntered]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[(getdate())]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[InventoryRecords]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[InventoryRecords].[DateEntered]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_InventoryRecords_Increment]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[((0))]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[InventoryRecords]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[InventoryRecords].[Increment]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_ObjectStore_CreatedOn]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[(getdate())]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[ObjectStore]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[ObjectStore].[CreatedOn]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_ObjectStore_ModifiedOn]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[(getdate())]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[ObjectStore]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[ObjectStore].[ModifiedOn]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_OrderItems_Discount]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[((0))]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[OrderItems]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[OrderItems].[Discount]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_OrderItems_LineItemPrice]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[((0))]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[OrderItems]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[OrderItems].[LineItemPrice]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_OrderItems_LineItemWeightInPounds]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[((5))]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[OrderItems]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[OrderItems].[LineItemWeightInPounds]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_Orders_CreatedOn]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[(getdate())]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Orders]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[Orders].[CreatedOn]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_Orders_DiscountAmount]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[((0))]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Orders]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[Orders].[DiscountAmount]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_Orders_ModifiedOn]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[(getdate())]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Orders]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[Orders].[ModifiedOn]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_Orders_ShippingAmount]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[((0))]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Orders]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[Orders].[ShippingAmount]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_Orders_SubTotal]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[((0))]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Orders]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[Orders].[SubTotal]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_Orders_TaxAmount]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[((0))]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Orders]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[Orders].[TaxAmount]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_Orders_UserLanguageCode]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[('en')]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Orders]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[Orders].[UserLanguageCode]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_ProductDescriptors_IsDefault]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[((0))]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[ProductDescriptors]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[ProductDescriptors].[IsDefault]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_ProductDescriptors_LanguageCode]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[('en')]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[ProductDescriptors]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[ProductDescriptors].[LanguageCode]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_ProductOptions_LanguageCode]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[('en')]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[ProductOptions]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[ProductOptions].[LanguageCode]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_Products_AllowBackOrder]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[((1))]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Products]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[Products].[AllowBackOrder]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_Products_AllowPreOrder]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[((1))]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Products]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[Products].[AllowPreOrder]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_Products_AmountOnHand]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[((10))]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Products]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[Products].[AmountOnHand]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_Products_DateAvailable]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[('1/1/2003')]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Products]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[Products].[DateAvailable]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_Products_DeliveryMethodID]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[((1))]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Products]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[Products].[DeliveryMethodID]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_Products_EstimatedDelivery]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[(N'3-5 Days')]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Products]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[Products].[EstimatedDelivery]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_Products_InventoryStatusID]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[((1))]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Products]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[Products].[InventoryStatusID]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_Products_IsTaxable]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[((1))]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Products]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[Products].[IsTaxable]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_Products_UnitPrice]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[((0))]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Products]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[Products].[BasePrice]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_Products_WeightInPounds]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[((0))]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Products]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[Products].[WeightInPounds]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_ShippingMethods_BaseRate]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[((0))]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[ShippingMethods]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[ShippingMethods].[BaseRate]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_ShippingMethods_DaysToDeliver]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[((2))]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[ShippingMethods]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[ShippingMethods].[DaysToDeliver]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_ShippingMethods_RatePerPound]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[((0))]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[ShippingMethods]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[ShippingMethods].[RatePerPound]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_ShoppingCartItem_CreatedOn]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[(getdate())]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[OrderItems]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[OrderItems].[DateAdded]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_ShoppingCartItem_Quantity]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[((1))]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[OrderItems]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[OrderItems].[Quantity]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_TaxRates_Country]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[('US')]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[TaxRates]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[TaxRates].[Country]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_TaxRates_Rate]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[((0))]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[TaxRates]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[TaxRates].[Rate]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_Transactions_Amount]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[((0))]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Transactions]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[Transactions].[Amount]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_Transactions_TransactionDate]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[(getdate())]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Transactions]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[Transactions].[TransactionDate]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint" Name="[dbo].[DF_UserEvents_EventDate]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[(getdate())]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[CustomerEvents]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[CustomerEvents].[EventDate]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90ForeignKeyConstraint" Name="[dbo].[FK_CartItems_Customers]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[CartItems].[UserName]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[CartItems]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[Customers].[UserName]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[Customers]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90ForeignKeyConstraint" Name="[dbo].[FK_CartItems_Products]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[CartItems].[SKU]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[CartItems]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[Products].[SKU]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[Products]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90ForeignKeyConstraint" Name="[dbo].[FK_Categories_Products_Categories]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[Categories_Products].[CategoryCode]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Categories_Products]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[Categories].[Code]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[Categories]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90ForeignKeyConstraint" Name="[dbo].[FK_Categories_Products_Products]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[Categories_Products].[SKU]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Categories_Products]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[Products].[SKU]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[Products]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90ForeignKeyConstraint" Name="[dbo].[FK_CustomerEvents_Customers]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[CustomerEvents].[UserName]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[CustomerEvents]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[Customers].[UserName]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[Customers]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90ForeignKeyConstraint" Name="[dbo].[FK_InventoryRecords_Products]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[InventoryRecords].[SKU]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[InventoryRecords]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[Products].[SKU]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[Products]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90ForeignKeyConstraint" Name="[dbo].[FK_OrderItems_Orders]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[OrderItems].[OrderID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[OrderItems]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[Orders].[OrderID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[Orders]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90ForeignKeyConstraint" Name="[dbo].[FK_OrderItems_Products]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[OrderItems].[SKU]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[OrderItems]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[Products].[SKU]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[Products]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90ForeignKeyConstraint" Name="[dbo].[FK_Orders_Addresses]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[Orders].[ShippingAddressID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Orders]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[Addresses].[AddressID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[Addresses]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90ForeignKeyConstraint" Name="[dbo].[FK_Orders_Addresses1]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[Orders].[BillingAddressID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Orders]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[Addresses].[AddressID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[Addresses]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90ForeignKeyConstraint" Name="[dbo].[FK_Orders_Customers]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[Orders].[UserName]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Orders]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[Customers].[UserName]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[Customers]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90ForeignKeyConstraint" Name="[dbo].[FK_Orders_OrderStatus]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[Orders].[OrderStatusID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Orders]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[OrderStatus].[OrderStatusID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[OrderStatus]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90ForeignKeyConstraint" Name="[dbo].[FK_ProductDescriptors_Products]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[ProductDescriptors].[SKU]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[ProductDescriptors]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[Products].[SKU]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[Products]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90ForeignKeyConstraint" Name="[dbo].[FK_ProductImages_Products]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[ProductImages].[SKU]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[ProductImages]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[Products].[SKU]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[Products]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90ForeignKeyConstraint" Name="[dbo].[FK_ProductOptions_ProductOptionDisplays]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[ProductOptions].[DisplayID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[ProductOptions]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[ProductOptionDisplays].[OptionDisplayID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[ProductOptionDisplays]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90ForeignKeyConstraint" Name="[dbo].[FK_ProductOptionValues_ProductOptions]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[ProductOptionValues].[OptionID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[ProductOptionValues]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[ProductOptions].[OptionID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[ProductOptions]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90ForeignKeyConstraint" Name="[dbo].[FK_Products_CrossSell_Products]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[Products_CrossSell].[SKU]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Products_CrossSell]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[Products].[SKU]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[Products]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90ForeignKeyConstraint" Name="[dbo].[FK_Products_CrossSell_Products1]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[Products_CrossSell].[CrossSKU]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Products_CrossSell]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[Products].[SKU]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[Products]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90ForeignKeyConstraint" Name="[dbo].[FK_Products_DeliveryMethod]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[Products].[DeliveryMethodID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Products]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[DeliveryMethod].[DeliveryMethodID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[DeliveryMethod]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90ForeignKeyConstraint" Name="[dbo].[FK_Products_InventoryStatus]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[Products].[InventoryStatusID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Products]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[InventoryStatus].[InventoryStatusID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[InventoryStatus]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90ForeignKeyConstraint" Name="[dbo].[FK_Products_Options_ProductOptions]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[Products_Options].[OptionID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Products_Options]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[ProductOptions].[OptionID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[ProductOptions]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90ForeignKeyConstraint" Name="[dbo].[FK_Products_Options_ProductOptionValues]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[Products_Options].[OptionValueID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Products_Options]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[ProductOptionValues].[OptionValueID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[ProductOptionValues]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90ForeignKeyConstraint" Name="[dbo].[FK_Products_Options_Products]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[Products_Options].[SKU]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Products_Options]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[Products].[SKU]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[Products]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90ForeignKeyConstraint" Name="[dbo].[FK_Products_Related_Products]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[Products_Related].[SKU]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Products_Related]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[Products].[SKU]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[Products]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90ForeignKeyConstraint" Name="[dbo].[FK_Products_Related_Products1]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[Products_Related].[RelatedSKU]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Products_Related]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[Products].[SKU]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[Products]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90ForeignKeyConstraint" Name="[dbo].[FK_Transactions_Orders]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[Transactions].[OrderID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Transactions]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[Orders].[OrderID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[Orders]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90ForeignKeyConstraint" Name="[dbo].[FK_UserEvents_UseBehaviors]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[CustomerEvents].[UserBehaviorID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[CustomerEvents]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[CustomerBehaviors].[UserBehaviorID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[CustomerBehaviors]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[InventoryRecords]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[InventoryRecords].[InventoryRecordID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[InventoryRecords].[SKU]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[InventoryRecords].[Increment]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[InventoryRecords].[DateEntered]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[InventoryRecords].[Notes]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="500" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[InventoryStatus]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[InventoryStatus].[InventoryStatusID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[InventoryStatus].[Description]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[ObjectStore]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ObjectStore].[ID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ObjectStore].[ObjectKey]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ObjectStore].[SearchString]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="255" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ObjectStore].[SystemType]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="150" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ObjectStore].[Data]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[image]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ObjectStore].[CreatedOn]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ObjectStore].[ModifiedOn]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[OrderItems]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[OrderItems].[OrderID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[uniqueidentifier]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[OrderItems].[SKU]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[OrderItems].[Quantity]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[OrderItems].[DateAdded]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[OrderItems].[LineItemPrice]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Precision" Value="18" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[decimal]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[OrderItems].[Discount]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Precision" Value="18" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[decimal]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[OrderItems].[DiscountReason]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="255" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[OrderItems].[Version]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[timestamp]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[OrderItems].[LineItemWeightInPounds]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Precision" Value="18" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[decimal]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[Orders]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Orders].[OrderID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[uniqueidentifier]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Orders].[OrderNumber]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Orders].[UserName]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Orders].[UserLanguageCode]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="2" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Orders].[TaxAmount]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[money]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Orders].[ShippingService]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Orders].[ShippingAmount]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[money]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Orders].[DiscountAmount]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[money]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Orders].[DiscountReason]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Orders].[ShippingAddressID]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Orders].[BillingAddressID]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Orders].[DateShipped]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Orders].[TrackingNumber]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Orders].[EstimatedDelivery]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Orders].[SubTotal]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[money]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Orders].[OrderStatusID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Orders].[CreatedOn]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Orders].[ExecutedOn]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Orders].[ModifiedOn]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Orders].[Version]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[timestamp]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[OrderStatus]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[OrderStatus].[OrderStatusID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[OrderStatus].[Description]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_Addresses]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Addresses].[AddressID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Addresses]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_CartItems_1]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[CartItems].[SKU]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[CartItems].[UserName]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[CartItems]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_Categories]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Categories].[Code]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Categories]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_Categories_Products]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Categories_Products].[CategoryCode]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Categories_Products].[SKU]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Categories_Products]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_Customers]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Customers].[UserName]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Customers]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_DeliveryMethod]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[DeliveryMethod].[DeliveryMethodID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[DeliveryMethod]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_InventoryRecords]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[InventoryRecords].[InventoryRecordID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[InventoryRecords]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_InventoryStatus]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[InventoryStatus].[InventoryStatusID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[InventoryStatus]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_ObjectStore]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[ObjectStore].[ID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[ObjectStore]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_OrderItems]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[OrderItems].[OrderID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[OrderItems].[SKU]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[OrderItems]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_Orders]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Orders].[OrderID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Orders]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_OrderStatus]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[OrderStatus].[OrderStatusID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[OrderStatus]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_ProductDescriptors]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[ProductDescriptors].[DescriptorID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[ProductDescriptors]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_ProductImages]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[ProductImages].[ProductImageID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[ProductImages]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_ProductOptionDisplays]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[ProductOptionDisplays].[OptionDisplayID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[ProductOptionDisplays]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_ProductOptions]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[ProductOptions].[OptionID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[ProductOptions]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_ProductOptionValues]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[ProductOptionValues].[OptionValueID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[ProductOptionValues]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_Products]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Products].[SKU]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Products]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_Products_CrossSell]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Products_CrossSell].[SKU]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Products_CrossSell].[CrossSKU]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Products_CrossSell]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_Products_Options]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Products_Options].[SKU]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Products_Options].[OptionID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Products_Options].[OptionValueID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Products_Options]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_Products_Related]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Products_Related].[SKU]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Products_Related].[RelatedSKU]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Products_Related]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_ShippingMethods]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[ShippingMethods].[ShippingMethodID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[ShippingMethods]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_TaxRates]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[TaxRates].[TaxRateID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[TaxRates]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_Transactions]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Transactions].[TransactionID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Transactions]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_UseBehaviors]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[CustomerBehaviors].[UserBehaviorID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[CustomerBehaviors]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_UserEvents]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[CustomerEvents].[EventID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[CustomerEvents]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[ProductDescriptors]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ProductDescriptors].[DescriptorID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ProductDescriptors].[SKU]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ProductDescriptors].[LanguageCode]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="2" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ProductDescriptors].[Title]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ProductDescriptors].[IsDefault]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bit]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ProductDescriptors].[Body]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="2500" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[ProductImages]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ProductImages].[ProductImageID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ProductImages].[SKU]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ProductImages].[ThumbUrl]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="150" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ProductImages].[FullImageUrl]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="150" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[ProductOptionDisplays]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ProductOptionDisplays].[OptionDisplayID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ProductOptionDisplays].[HTMLDisplay]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[ProductOptions]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ProductOptions].[OptionID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ProductOptions].[Description]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ProductOptions].[LanguageCode]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="2" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ProductOptions].[DisplayID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ProductOptions].[Prompt]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="255" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[ProductOptionValues]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ProductOptionValues].[OptionValueID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ProductOptionValues].[OptionID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ProductOptionValues].[Description]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="255" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[Products]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Products].[SKU]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Products].[DeliveryMethodID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Products].[ProductName]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Products].[Blurb]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="127" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Products].[BasePrice]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Precision" Value="18" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[decimal]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Products].[WeightInPounds]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[money]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Products].[DateAvailable]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Products].[InventoryStatusID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Products].[EstimatedDelivery]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Products].[AllowBackOrder]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bit]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Products].[IsTaxable]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bit]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Products].[DefaultImageFile]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="255" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Products].[Version]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[timestamp]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Products].[AmountOnHand]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Products].[AllowPreOrder]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bit]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[Products_CrossSell]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Products_CrossSell].[SKU]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Products_CrossSell].[CrossSKU]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[Products_Options]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Products_Options].[SKU]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Products_Options].[OptionID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Products_Options].[OptionValueID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[Products_Related]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Products_Related].[SKU]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Products_Related].[RelatedSKU]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[ShippingMethods]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ShippingMethods].[ShippingMethodID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ShippingMethods].[Carrier]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ShippingMethods].[ServiceName]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ShippingMethods].[RatePerPound]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Precision" Value="18" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[decimal]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ShippingMethods].[BaseRate]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Precision" Value="18" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[decimal]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ShippingMethods].[EstimatedDelivery]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ShippingMethods].[DaysToDeliver]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[TaxRates]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[TaxRates].[TaxRateID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[TaxRates].[Rate]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[money]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[TaxRates].[Region]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="2" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[TaxRates].[Country]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="2" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[TaxRates].[PostalCode]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[Transactions]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Transactions].[TransactionID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[uniqueidentifier]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Transactions].[OrderID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[uniqueidentifier]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Transactions].[TransactionDate]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Transactions].[Amount]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[money]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Transactions].[AuthorizationCode]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Transactions].[Notes]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Transactions].[Processor]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Role" Name="[state_persistence_users]" Disambiguator="1">
+			<Relationship Name="Authorizer">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Schema" Name="[state_persistence_users]">
+			<Relationship Name="Authorizer">
+				<Entry>
+					<References Name="[state_persistence_users]" Disambiguator="1" />
+				</Entry>
+			</Relationship>
+		</Element>
+	</Model>
+</DataSchemaModel>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <setParameter name="IIS Web Application Name" value="Tailspin" />
+  <setParameter name="ApplicationServices-Web.config Connection String" value="Data Source=localhost;Initial Catalog=aspnetdb;Integrated Security=True" />
+  <setParameter name="TailspinConnectionString-Web.config Connection String" value="Data Source=localhost;Initial Catalog=TailspinToys;Integrated Security=True" />
+  <setParameter name="ObjectStore-Web.config Connection String" value="Data Source=localhost;Initial Catalog=TailspinToys;Integrated Security=True" />
+</parameters>
